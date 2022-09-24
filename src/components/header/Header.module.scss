@@ -1,0 +1,65 @@
+
+.logo{
+  padding-left:1rem;
+  padding-top:1rem;
+  font-size:2rem;
+  width:35%;
+  height: 5rem;
+}
+.logo h1{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size:3rem;
+  margin:0;
+  margin-left: 2rem;
+  margin-top:0,5rem;
+  color:white;
+}
+.logo h1:hover{
+  color: #EBBB50;
+  font-weight: bold;
+  transition: 0.5s;
+  transform: translateX(-5px);
+}
+.menu{
+  width:100%;
+  height: 5rem;
+  line-height: 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color:black;
+}
+.menu_item ul {
+  margin:0;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  height: 5rem;
+  line-height: 5rem;
+  padding-right:6rem;
+}
+.menu_item li{
+  margin:0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:1rem;
+  text-decoration: underline;
+}
+.menu a{
+  text-decoration: none;
+  color:white;
+}
+.menu a:hover{
+  text-decoration: none;
+  color: #EBBB50;
+  font-weight: bold;
+}
+.menu_item{
+  height: 5rem;
+  line-height: 5rem;
+  margin-top:1rem;
+}
