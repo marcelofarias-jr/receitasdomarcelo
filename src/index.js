@@ -7,6 +7,8 @@ import Home from './pages/home';
 import Contact from './pages/contact';
 import Recipe from './pages/recipe';
 import PostRecipe from './components/recipe';
+import Footer from './components/footer';
+import NotFound from './pages/notFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,11 +20,9 @@ root.render(
         <Route path='/contact' element={<Contact />} />
         <Route path='/Recipe' element={<Recipe />} />
         <Route path='/receitas/:id' element={<PostRecipe />} />
-        {/* <Route path='/contato' element={<Contato />} />
-        <Route path='/receitas' element={<Receitas />} >
-          <Route path='/receitas/:id' element={<Receita />} />
-        </Route> */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

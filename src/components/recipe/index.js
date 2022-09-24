@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
-import { isRouteErrorResponse, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import styles from "./Recipe.module.scss"
 
 export default function PostRecipe() {
@@ -32,9 +32,7 @@ export default function PostRecipe() {
         <label>{item.rendimento}</label>
         <h3>Ingredientes</h3>
         <ul>
-          {Map.(item.igredientes)}
-          <li>{item.igredientes[0]}</li>
-          <li>{item.igredientes[1]}</li>
+
         </ul>
       </div>
     </Container>

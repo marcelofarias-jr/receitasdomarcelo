@@ -5,13 +5,11 @@ import styles from "./Header.module.scss";
 function Header() {
   return (
     <header className={styles.menu}>
-
+      <Container className={styles.menu__container}>
         <section className={styles.logo}>
-        <Container>
           <a href="/">
             <h1>laricas.com</h1>
           </a>
-          </Container>
         </section>
         <nav className={styles.menu_item}>
           <ul>
@@ -24,12 +22,9 @@ function Header() {
             <li>
               <Link to="/recipe">Receitas</Link>
             </li>
-            <li>
-              <Link to="/receitas/1">Receita 1</Link>
-            </li>
           </ul>
         </nav>
-
+      </Container>
     </header>
   );
 }

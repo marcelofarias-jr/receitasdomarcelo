@@ -30,7 +30,7 @@ export default function List() {
                   alt={receita.resumo}
                 />
                 <div className={styles.lista_ultimas_info}>
-                  <Link to={`/receitas/`+`${receita.id}`}>
+                  <Link to={`/receitas/${receita.id}`}>
                     <h3>{receita.titulo}</h3>
                   </Link>
                   <Row>
@@ -54,7 +54,7 @@ export default function List() {
                   alt={receita.resumo}
                 />
                 <div className={styles.lista_ultimas_info}>
-                  <Link to={`/receitas/`+`${receita.id}`}>
+                  <Link to={`/receitas/${receita.id}`}>
                     <h3>{receita.titulo}</h3>
                   </Link>
                   <Row>
