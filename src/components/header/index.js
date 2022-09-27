@@ -8,7 +8,11 @@ function Header() {
       <Container className={styles.menu__container}>
         <section className={styles.logo}>
           <a href="/">
-            <h1>laricas.com</h1>
+            <img
+             src={require("../../assets/img/logo-marcelo.png")}
+             alt="logo do site - Receitas do Marcelo"
+            />
+            {/* <h1>Receitas do Marcelo</h1> */}
           </a>
         </section>
         <nav className={styles.menu_item}>

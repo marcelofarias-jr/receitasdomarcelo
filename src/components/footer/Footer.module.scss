@@ -1,0 +1,35 @@
+footer{
+  padding: 50px 0;
+  background-color: #E64848;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    text-decoration: none;
+    color: #FFFDE3;
+    font-family: 'Poppins', sans-serif;
+    &:hover{
+      color: #CFE8A9;
+    }
+  }
+  h4{
+    font-family: 'Reem Kufi Fun', sans-serif;
+  }
+  p{
+    font-family: 'Poppins', sans-serif;
+  }
+}
+.footer__content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.info{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}

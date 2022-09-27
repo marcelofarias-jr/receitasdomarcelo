@@ -1,49 +1,68 @@
-.lista{
-  display:flex;
+.lista {
+  display: flex;
   margin: 50px 30px;
+
+  h2 {
+    color: #E64848;
+  }
 }
-.lista_ultimas{
+
+.lista_ultimas {
   padding: 1rem;
   width: 50%;
   height: auto;
 }
-.lista_ultimas_item img{
+
+.lista_ultimas_item img {
   width: 15rem;
   height: 6rem;
   margin-right: 1rem;
-  border: 3px solid #4E4637;
+  border: 3px solid #FFFDE3;
 }
-.lista_ultimas_item{
-  padding: 0.5rem;
-  margin: 0.1rem 0rem;
+
+.lista_ultimas_item {
+  padding: 1rem .5rem;
+  margin: 0.3rem 0rem;
   display: inline-flex;
   align-items: center;
   width: 100%;
-  border: 1px solid #B5AA99;
+  background-color: #CFE8A9;
+  border-radius: 15px;
+
+  &:hover {
+    -webkit-box-shadow: 0px 0px 19px -4px rgba(61,60,66,1);
+    -moz-box-shadow: 0px 0px 19px -4px rgba(61,60,66,1);
+    box-shadow: 0px 0px 19px -4px rgba(61,60,66,1);
+  }
 }
-.lista_ultimas_item a{
+
+.lista_ultimas_item a {
   text-decoration: none;
-  color:black;
+  color: #C21010;
 }
-.lista_ultimas_item a:hover{
-  text-decoration: underline;
-  color:#4E4637;
+
+.lista_ultimas_item a:hover {
+  color: #E64848;
+
 }
-.lista_ultimas_info{
+
+.lista_ultimas_info {
   width: 100%;
   display: inline-block;
 }
-.lista_ultimas_info p{
+
+.lista_ultimas_info p {
   margin: 0rem 0.5rem;
   padding: 0.2rem 0rem;
-  color:white;
-  background-color:#EBBB50;
+  color: white;
+  background-color: #EBBB50;
   width: 8rem;
   border-radius: 3rem;
   display: flex;
   justify-content: center;
 }
-.lista_acessadas{
+
+.lista_acessadas {
   padding: 1rem;
   width: 50%;
   height: 30rem;

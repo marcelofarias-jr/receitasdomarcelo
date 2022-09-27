@@ -1,5 +1,5 @@
 import styles from "./List.module.scss";
-import { Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useCallback, useEffect, useState } from "react";
 import { loadRecipe } from "../../API/load-recipe";
@@ -18,6 +18,7 @@ export default function List() {
 
 
   return (
+    <Container>
     <section className={styles.lista}>
       <div className={styles.lista_ultimas}>
         <h2>Últimas receitas</h2>
@@ -68,5 +69,7 @@ export default function List() {
         </section>
       </div>
     </section>
+    </Container>
+
   );
 }
