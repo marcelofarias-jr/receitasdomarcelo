@@ -11,6 +11,7 @@
   padding: 1rem;
   width: 50%;
   height: auto;
+
 }
 
 .lista_ultimas_item img {
@@ -66,4 +67,23 @@
   padding: 1rem;
   width: 50%;
   height: 30rem;
+}
+
+
+@media only screen and (max-width: 1186px){
+  .lista{
+    flex-direction: column;
+  }
+  .lista_ultimas{
+    width: 100%;
+    p{
+      margin-bottom: 10px;
+    }
+  }
+  .lista_acessadas{
+    width: 100%;
+    p{
+      margin-bottom: 10px;
+    }
+  }
 }

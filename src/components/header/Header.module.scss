@@ -1,7 +1,8 @@
-.menu__container{
+.menu__desktop{
   display: flex;
   justify-content: space-between;
   align-content: center;
+  display: flex;
 }
 .logo{
   font-size:2rem;
@@ -64,4 +65,49 @@
   height: 5rem;
   line-height: 5rem;
   margin-top:1rem;
+}
+
+.menu__mble{
+  position: relative;
+  display: none;
+  button{
+    border: none;
+    background-color: #FFFDE3;
+  }
+}
+.menu__mble__content{
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  left: 0px;
+  top:6rem;
+  color: orange;
+  background-color: gray;
+  z-index: 2;
+}
+.menu_item__mbl{
+  display: flex;
+  flex-direction: column;
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      margin: 1rem 0;
+      padding: 0;
+      height: 3rem;
+      a{
+        height: 3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .menu__desktop{
+    display: none;
+  }
+  .menu__mble{
+    display: inline;
+  }
+
 }

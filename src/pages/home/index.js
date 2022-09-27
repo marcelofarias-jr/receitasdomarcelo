@@ -10,7 +10,9 @@ const [dados, setDados] = useState([]);
 
 const handleLoadPosts = useCallback(async () => {
   const recipesResponse = await loadRecipe();
-  setDados(recipesResponse);
+  console.log('recipe',recipesResponse.receitas);
+
+  setDados(recipesResponse.receitas);
 
 }, []);
 
@@ -22,7 +24,7 @@ const handleLoadPosts = useCallback(async () => {
   return(
     <main className={styles.home}>
         <Hero />
-        <List />
+        <List dados={dados}/>
     </main>
   )
 };
