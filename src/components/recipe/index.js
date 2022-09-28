@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import styles from "./Recipe.module.scss";
 import { loadRecipe } from "../../API/load-recipe";
@@ -42,6 +41,7 @@ export default function PostRecipe() {
             <label>{item.tempoDePreparo}</label>
             <label>{item.rendimento}</label>
             <label>{item.tipo}</label>
+            <label>{item.culinária}</label>
             {!!item.vegano && <label>Vegano</label>}
           </div>
           <div className={styles.revenue__ingredients}>
