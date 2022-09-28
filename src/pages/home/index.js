@@ -13,7 +13,6 @@ const handleLoadPosts = useCallback(async () => {
   console.log('recipe',recipesResponse.receitas);
 
   setDados(recipesResponse.receitas);
-
 }, []);
 
   useEffect(() => {
@@ -24,7 +23,7 @@ const handleLoadPosts = useCallback(async () => {
   return(
     <main className={styles.home}>
         <Hero />
-        <List dados={dados}/>
+        <List data={dados}/>
     </main>
   )
 };

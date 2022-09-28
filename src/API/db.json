@@ -5,22 +5,23 @@
       "foto": "cake-g883e0c773_1920",
       "titulo": "Bruaca cearense",
       "resumo": "Receita de bruaca, uma panquequinha nordestina muito fácil de fazer para servir no café da manhã ou no lanche e encantar a família! Confira agora mesmo!",
-      "igredientes": {
-        "0": "1 ovo",
-        "1": "1 colher de sopa de manteiga",
-        "2": "1/2 xícara (chá) de açúcar",
-        "3": "1/2 xícara (chá) de farinha de trigo",
-        "4": "1 xícara (chá) de leite",
-        "5": "1 pitada de sal",
-        "6": "óleo ou manteiga para untar"
-      },
-      "preparo": {
-        "1": "Misture bem os ingredientes até formar uma massa pastosa.",
-        "2": "Faça um bolinho de massa e cubra com manteiga ou óleo untado.",
-        "3": "Em frigideira antiaderente untada com óleo ou manteiga, espalhe porções da massa, formando círculos de 10 a 12 cm de diâmetro.",
-        "4": "Deixe dourar por baixo e vire para dourar do outro lado.",
-        "5": "Sirva com mel, frutas, geleia, creme de avelã etc."
-      },
+      "igredientes": [
+        "1 ovo",
+        "1 colher de sopa de manteiga",
+        "1/2 xícara (chá) de açúcar",
+        "1/2 xícara (chá) de farinha de trigo",
+        "1 xícara (chá) de leite",
+        "1 pitada de sal",
+        "óleo ou manteiga para untar"
+      ],
+      "preparo":
+        [
+          "Misture bem os ingredientes até formar uma massa pastosa.",
+          "Faça um bolinho de massa e cubra com manteiga ou óleo untado.",
+          "Em frigideira antiaderente untada com óleo ou manteiga, espalhe porções da massa, formando círculos de 10 a 12 cm de diâmetro.",
+          "Deixe dourar por baixo e vire para dourar do outro lado.",
+          "Sirva com mel, frutas, geleia, creme de avelã etc."
+        ],
       "vegano": true,
       "tipo": {
         "id": 1,
@@ -39,25 +40,25 @@
       "foto": "pasta-g6a3a00a95_1920",
       "titulo": "Macarrão Carbonara",
       "resumo": "Receita de Macarrão Carbonara tradicional e deliciosa, feita com bacon, Spaghetti RENATA e MAGGI Meu Segredo Refoga.",
-      "igredientes": {
-        "0": "150 g de bacon em tiras finas de 1 cm",
-        "1": "300 g de Spaghetti",
-        "2": "6 gemas de ovo",
-        "3": "70 g queijo parmesão fresco ralado",
-        "4": "1 pitada de pimenta do reino moída"
-      },
-      "preparo": {
-        "1": "Em uma frigideira de bordas altas, em fogo médio, frite as tiras de bacon dos dois lados, tomando cuidado para não queimar.Reserve.",
-        "2": "Em uma frigideira, coloque o bacon, o Spaghetti e o queijo ralado.",
-        "3": "Em outra panela, ferva 3 litros de água e coloque o macarrão para cozinhar (não é necessário adicionar sal ou óleo).",
-        "4": "Cozinhe-o por cerca de 9 minutos, até ficar “al dente”.",
-        "5": "Retire do fogo e reserve.",
-        "6": "Enquanto o macarrão cozinha, despeje as gemas em uma tigela, uma parte do queijo parmesão e a pimenta, misturando tudo com um batedor de arame.",
-        "7": "Adicione duas colheres de sopa da água do cozimento do macarrão para ficar bem cremoso.  ",
-        "8": "Quando o macarrão estiver “al dente”, escorra-o, aqueça a frigideira com o bacon em fogo baixo e adicione a massa, misturando bem e rapidamente.",
-        "9": "Tire a frigideira do fogo e junte a mistura de gema e queijo, incorporando-a vigorosamente.",
-        "10": "Sirva imediatamente com o restante do queijo ralado por cima."
-      },
+      "igredientes": [
+        "150 g de bacon em tiras finas de 1 cm",
+        "300 g de Spaghetti",
+        "6 gemas de ovo",
+        "70 g queijo parmesão fresco ralado",
+        "1 pitada de pimenta do reino moída"
+      ],
+      "preparo": [
+        "Em uma frigideira de bordas altas, em fogo médio, frite as tiras de bacon dos dois lados, tomando cuidado para não queimar.Reserve.",
+        "Em uma frigideira, coloque o bacon, o Spaghetti e o queijo ralado.",
+        "Em outra panela, ferva 3 litros de água e coloque o macarrão para cozinhar (não é necessário adicionar sal ou óleo).",
+        "Cozinhe-o por cerca de 9 minutos, até ficar “al dente”.",
+        "Retire do fogo e reserve.",
+        "Enquanto o macarrão cozinha, despeje as gemas em uma tigela, uma parte do queijo parmesão e a pimenta, misturando tudo com um batedor de arame.",
+        "Adicione duas colheres de sopa da água do cozimento do macarrão para ficar bem cremoso.",
+        "Quando o macarrão estiver “al dente”, escorra-o, aqueça a frigideira com o bacon em fogo baixo e adicione a massa, misturando bem e rapidamente.",
+        "Tire a frigideira do fogo e junte a mistura de gema e queijo, incorporando-a vigorosamente.",
+        "Sirva imediatamente com o restante do queijo ralado por cima."
+      ],
       "vegano": false,
       "tipo": {
         "id": 2,
@@ -76,33 +77,30 @@
       "foto": "caponata",
       "titulo": "Caponata de beringela",
       "resumo": "Receita de Caponata de Berinjela deliciosa feita com pimentão amarelo, verde e vermelho, berinjela e champignon .",
-      "igredientes": {
-        "0": "2 berinjelas grandes em cubos",
-        "1": "1 pimentão amarelo em cubos",
-        "2": "1 pimentão vermelho em cubos",
-        "3": "1 cebola grande, em cubos",
-        "4": "1/2 xícara (chá) de azeitonas sem caroço, cortadas ao meio",
-        "5": "Sal a gosto",
-        "6": "Orégano a gosto",
-        "7": "200g de champignon cortado",
-        "8": "Azeite para refogar e para cobrir a conserva",
-        "9": "Salsinha e cebolinha a gosto"
-      },
-      "preparo": {
-        "1": "Descasque as berinjelas e corte-as em cubinhos ou tirinhas.",
-        "2": "Tire as sementes dos pimentões e corte-os em cubinhos ou tirinhas.",
-        "3": "Em uma panela, refogue a cebola picadinha junto com o alho amassado e o orégano no azeite.",
-        "4": "Junte a berinjela e os pimentões.",
-        "5": "Mexa para não pegar no fundo.",
-        "6": "Acrescente as azeitonas e o champignon.",
-        "7": "Prove e acerte o sal se necessário.",
-        "8": "Depois que a berinjela estiver bem molinha, apague o fogo e acrescente a salsinha e a cebolinha.",
-        "9": "Coloque em um refratário de vidro e deixe esfriar.",
-        "10": "Esterelize um pote de vidro (com tampa) jogando água fervente dentro dele.",
-        "11": "Depois que esfriar, coloque a caponata no pote de vidro, cubra com azeite, tampe e leve à geladeira.",
-        "12": "Depois que estiver gelada já pode consumir, porém ela fica mais gostosa no dia seguinte.",
-        "13": "Ideal para servir como aperitivo com torradinhas ou pão italiano."
-      },
+      "igredientes": [
+                      "2 berinjelas grandes em cubos",
+                      "1 pimentão amarelo em cubos",
+                      "1 pimentão vermelho em cubos",
+                       "1 cebola grande, em cubos",
+                       "1/2 xícara (chá) de azeitonas sem caroço, cortadas ao meio",
+                       "Sal a gosto","Orégano a gosto","200g de champignon cortado",
+                       "Azeite para refogar e para cobrir a conserva",
+                       "Salsinha e cebolinha a gosto"],
+      "preparo": [
+                  "Descasque as berinjelas e corte-as em cubinhos ou tirinhas.",
+                  "Tire as sementes dos pimentões e corte-os em cubinhos ou tirinhas.",
+                  "Em uma panela, refogue a cebola picadinha junto com o alho amassado e o orégano no azeite.",
+                  "Junte a berinjela e os pimentões.",
+                  "Mexa para não pegar no fundo.",
+                  "Acrescente as azeitonas e o champignon.",
+                  "Prove e acerte o sal se necessário.",
+                  "Depois que a berinjela estiver bem molinha, apague o fogo e acrescente a salsinha e a cebolinha.",
+                  "Coloque em um refratário de vidro e deixe esfriar.",
+                  "Esterelize um pote de vidro (com tampa) jogando água fervente dentro dele.",
+                  "Depois que esfriar, coloque a caponata no pote de vidro, cubra com azeite, tampe e leve à geladeira.",
+                  "Depois que estiver gelada já pode consumir, porém ela fica mais gostosa no dia seguinte.",
+                  "Ideal para servir como aperitivo com torradinhas ou pão italiano."
+                ],
       "vegano": true,
       "tipo": {
         "id": 2,

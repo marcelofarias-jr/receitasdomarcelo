@@ -1,29 +1,27 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import styles from "./Recipe.module.scss";
+import { loadRecipe } from "../../API/load-recipe";
 
 export default function PostRecipe() {
-  const [item, setItem] = useState({});
-  // const [igredientes, setIgredientes] = useState([]);
-  // const params = useParams();
+  const [item, setItem] = useState([]);
+  const [Ingredients, setIngredients] = useState([]);
+
   let { id } = useParams();
-  console.log("id", id);
 
-  const handleRevenue = (id) => {
-    axios.get(`http://localhost:3000/receitas/` + id).then((response) => {
-      const data = response.data;
-      console.log("data", data);
-      setItem(data);
-    });
-  };
+  const handleLoadPosts = useCallback(async (id) => {
+    const recipesResponse = await loadRecipe()
+    const idItem = (id-1)
+    // const dataIgre = (recipesResponse.receitas[idItem].igredientes)
+    setIngredients(recipesResponse.receitas[idItem].igredientes)
+    setItem(recipesResponse.receitas[idItem])
+  }, []);
+
   useEffect(() => {
-    handleRevenue(id);
-    // setIgredientes(data.igredientes);
-    // const igredientes = setIgredientes(data.igredientes);
-  }, [id]);
+    handleLoadPosts(id)
 
+  }, [id, handleLoadPosts]);
   return (
     <Container>
       <div className={styles.revenue}>
@@ -40,9 +38,20 @@ export default function PostRecipe() {
           <label>{item.tempoDePreparo}</label>
           <label>{item.rendimento}</label>
         </div>
+
         <h3>Ingredientes</h3>
-        <ul></ul>
+        <ul>
+        {Ingredients.map((item, i) =>{
+          return(
+            <li key={i}>{i+1}-{item}</li>
+          )
+
+        })}
+        </ul>
+
+
       </div>
     </Container>
   );
 }
+
