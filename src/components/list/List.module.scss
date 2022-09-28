@@ -1,9 +1,12 @@
+@import "../../assets/style/variables";
+
 .lista {
   display: flex;
   margin: 50px 30px;
 
   h2 {
-    color: #E64848;
+    color: $red;
+    font-family: 'Poppins', sans-serif;
   }
 }
 
@@ -18,7 +21,7 @@
   width: 15rem;
   height: 6rem;
   margin-right: 1rem;
-  border: 3px solid #FFFDE3;
+  border: 3px solid $light-yellow;
 }
 
 .lista_ultimas_item {
@@ -27,7 +30,7 @@
   display: inline-flex;
   align-items: center;
   width: 100%;
-  background-color: #CFE8A9;
+  background-color: $green;
   border-radius: 15px;
 
   &:hover {
@@ -39,11 +42,14 @@
 
 .lista_ultimas_item a {
   text-decoration: none;
-  color: #C21010;
+  color: $red;
+  h3{
+    font-family: 'Poppins', sans-serif;
+  }
 }
 
 .lista_ultimas_item a:hover {
-  color: #E64848;
+  color: $light-red;
 
 }
 
@@ -61,6 +67,7 @@
   border-radius: 3rem;
   display: flex;
   justify-content: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .lista_acessadas {

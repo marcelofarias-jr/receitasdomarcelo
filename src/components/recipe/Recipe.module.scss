@@ -1,14 +1,17 @@
+@import "../../assets/style/variables";
+
 .revenue{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $light-yellow;
   img{
-    width: 60vw;
+    width: 100%;
   }
   h1{
     margin: 3rem 0;
     font-family: 'Reem Kufi Fun', sans-serif;
-    color: #C21010;
+    color: $red;
     font-weight: 500;
   }
   p{
@@ -16,7 +19,7 @@
     margin: 2rem 0;
     font-size: 20px;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     font-family: 'Poppins', sans-serif;
   }
   ul{
@@ -31,27 +34,35 @@
     text-align: center;
     font-family: 'Poppins', sans-serif;
     text-align: left;
+    margin-bottom: .5rem;
+    color: $black;
   }
   h3{
     font-family: 'Reem Kufi Fun', sans-serif;
     padding-top: 20px;
+    font-size: 32px;
+    color: $light-red;
   }
   .revenue__center{
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    max-width: 60vw;
+    text-align: left;
   }
   .revenue__left{
     margin: 2rem 0 5rem 0;
+    max-width: 60vw;
   }
   .tags{
+    padding: 0 0 3rem 0;
     display: flex;
     label{
       font-family: 'Poppins', sans-serif;
       margin: 0rem 0.5rem;
       padding: .5rem .5rem;
-      color: #C21010;
-      background-color: #CFE8A9;
+      color: $red;
+      background-color: $green;
       font-weight: 600;
       width: 8rem;
       border-radius: 3rem;
@@ -59,4 +70,54 @@
       justify-content: center;
     }
   }
+
+}
+.revenue__ingredients{
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  translate: -20vw;
+  background-color: $light-red;
+  border: 1px solid red;
+  div{
+    width: 60vw;
+    h3{
+      color: $green;
+      margin-bottom: 2rem;
+    }
+    li{
+      color: white;
+    }
+  }
+}
+.revenue__preparation{
+  padding: 3rem 0;
+  width: 100vw;
+  translate: -20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $green;
+  div{
+    width: 60vw;
+    h3{
+      color: $light-red;
+      margin-bottom: 2rem;
+    }
+    li{
+      color: $black;
+    }
+  }
+
+}
+//
+
+
+@media only screen and (max-width: 768px){
+  .revenue__center{
+    max-width: 80vw;
+  }
+
 }

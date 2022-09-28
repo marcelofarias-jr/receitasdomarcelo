@@ -1,6 +1,8 @@
+@import "../../assets/style/variables";
+
 footer{
   padding: 50px 0;
-  background-color: #E64848;
+  background-color: $light-red;
   color: white;
   font-family: 'Poppins', sans-serif;
   ul{
@@ -10,10 +12,10 @@ footer{
   }
   a{
     text-decoration: none;
-    color: #FFFDE3;
+    color: $light-yellow;
     font-family: 'Poppins', sans-serif;
     &:hover{
-      color: #CFE8A9;
+      color: $green;
     }
   }
   h4{

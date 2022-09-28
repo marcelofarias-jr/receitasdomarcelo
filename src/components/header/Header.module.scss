@@ -1,3 +1,4 @@
+@import "../../assets/style/variables";
 .menu__desktop{
   display: flex;
   justify-content: space-between;
@@ -53,12 +54,12 @@
   font-size: 25px;
   text-decoration: none;
   font-weight: 500;
-  color: #C21010;
+  color: $red;
   font-family: 'Reem Kufi Fun', sans-serif;
 }
 .menu a:hover{
   text-decoration: none;
-  color: #C21010;
+  color: $red;
   font-weight: bold;
 }
 .menu_item{

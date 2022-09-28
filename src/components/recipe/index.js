@@ -26,8 +26,7 @@ export default function PostRecipe() {
   console.log("item", item);
   console.log("preparation", preparation);
   return (
-    <Container>
-      <div className={styles.revenue}>
+    <div className={styles.revenue}>
         <div className={styles.revenue__center}>
           <h1>{item.titulo}</h1>
           {!!item.foto && (
@@ -45,28 +44,27 @@ export default function PostRecipe() {
             <label>{item.tipo}</label>
             {!!item.vegano && <label>Vegano</label>}
           </div>
-          <h3>Ingredientes</h3>
-          <ul>
-            {ingredients.map((item, i) => {
-              return (
-                <li key={i}>
-                  {i + 1} - {item}
-                </li>
-              );
-            })}
-          </ul>
-          <h3>Modo de preparo</h3>
-          <ul>
-            {preparation.map((item, i) => {
-              return (
-                <li key={i}>
-                  {i + 1} - {item}
-                </li>
-              );
-            })}
-          </ul>
+          <div className={styles.revenue__ingredients}>
+            <div className={styles.revenu__content}>
+              <h3>Ingredientes para a sua receita</h3>
+              <ul>
+                {ingredients.map((item, i) => {
+                  return <li key={i}>- {item}</li>;
+                })}
+              </ul>
+            </div>
+          </div>
+          <div className={styles.revenue__preparation}>
+            <div className={styles.preparation__content}>
+              <h3>Como preparar {item.titulo}:</h3>
+              <ul>
+                {preparation.map((item, i) => {
+                  return <li key={i}>- {item}</li>;
+                })}
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </Container>
+    </div>
   );
 }

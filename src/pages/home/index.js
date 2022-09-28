@@ -10,8 +10,6 @@ const [dados, setDados] = useState([]);
 
 const handleLoadPosts = useCallback(async () => {
   const recipesResponse = await loadRecipe();
-  console.log('recipe',recipesResponse.receitas);
-
   setDados(recipesResponse.receitas);
 }, []);
 
@@ -19,7 +17,7 @@ const handleLoadPosts = useCallback(async () => {
     handleLoadPosts();
   }, [handleLoadPosts]);
 
-  console.log('dados', dados)
+  console.log('Receitas', dados)
   return(
     <main className={styles.home}>
         <Hero />
