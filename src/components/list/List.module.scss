@@ -3,6 +3,7 @@
 .lista {
   display: flex;
   margin: 50px 30px;
+  height: auto;
 
   h2 {
     color: $red;
@@ -19,7 +20,7 @@
 
 .lista_ultimas_item img {
   width: 15rem;
-  height: 6rem;
+  height: auto;
   margin-right: 1rem;
   border: 3px solid $light-yellow;
 }
@@ -73,7 +74,7 @@
 .lista_acessadas {
   padding: 1rem;
   width: 50%;
-  height: 30rem;
+  height: auto;
 }
 
 
@@ -91,6 +92,17 @@
     width: 100%;
     p{
       margin-bottom: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 576px){
+  .lista{
+    margin: 50px 0px;
+    h3{
+      font-size: 1.25rem;
+    }
+    img{
+      width: 10rem;
     }
   }
 }

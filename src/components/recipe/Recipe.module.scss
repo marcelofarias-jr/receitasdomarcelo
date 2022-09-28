@@ -10,7 +10,7 @@
   }
   h1{
     margin: 3rem 0;
-    font-family: 'Reem Kufi Fun', sans-serif;
+    font-family: $title;
     color: $red;
     font-weight: 500;
   }
@@ -20,7 +20,7 @@
     font-size: 20px;
     font-weight: 600;
     text-align: left;
-    font-family: 'Poppins', sans-serif;
+    font-family: $paragraph;
   }
   ul{
     margin: 0;
@@ -32,13 +32,13 @@
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: $paragraph;
     text-align: left;
     margin-bottom: .5rem;
     color: $black;
   }
   h3{
-    font-family: 'Reem Kufi Fun', sans-serif;
+    font-family: $title;
     padding-top: 20px;
     font-size: 32px;
     color: $light-red;
@@ -58,7 +58,7 @@
     padding: 0 0 3rem 0;
     display: flex;
     label{
-      font-family: 'Poppins', sans-serif;
+      font-family: $paragraph;
       margin: 0rem 0.5rem;
       padding: .5rem .5rem;
       color: $red;
@@ -70,7 +70,6 @@
       justify-content: center;
     }
   }
-
 }
 .revenue__ingredients{
   padding: 3rem 0;
@@ -80,7 +79,6 @@
   width: 100vw;
   translate: -20vw;
   background-color: $light-red;
-  border: 1px solid red;
   div{
     width: 60vw;
     h3{

@@ -4,7 +4,7 @@ footer{
   padding: 50px 0;
   background-color: $light-red;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: $paragraph;
   ul{
     list-style: none;
     margin: 0;
@@ -13,16 +13,16 @@ footer{
   a{
     text-decoration: none;
     color: $light-yellow;
-    font-family: 'Poppins', sans-serif;
+    font-family: $paragraph;
     &:hover{
       color: $green;
     }
   }
   h4{
-    font-family: 'Reem Kufi Fun', sans-serif;
+    font-family: $title;
   }
   p{
-    font-family: 'Poppins', sans-serif;
+    font-family: $paragraph;
   }
 }
 .footer__content{
@@ -33,5 +33,5 @@ footer{
 }
 .info{
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: $paragraph;
 }
