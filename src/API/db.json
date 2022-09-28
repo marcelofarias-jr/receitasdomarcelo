@@ -23,10 +23,9 @@
           "Sirva com mel, frutas, geleia, creme de avelã etc."
         ],
       "vegano": true,
-      "tipo": {
-        "id": 1,
-        "label": "Doce"
-      },
+      "tipo": [
+        "Doce"
+      ],
       "culinária": {
         "id": 1,
         "label": "Cearense"
@@ -60,10 +59,9 @@
         "Sirva imediatamente com o restante do queijo ralado por cima."
       ],
       "vegano": false,
-      "tipo": {
-        "id": 2,
-        "label": "Salgado"
-      },
+      "tipo": [
+        "Salgado"
+      ],
       "culinária": {
         "id": 2,
         "label": "Italiana"
@@ -102,10 +100,9 @@
                   "Ideal para servir como aperitivo com torradinhas ou pão italiano."
                 ],
       "vegano": true,
-      "tipo": {
-        "id": 2,
-        "label": "Salgado"
-      },
+      "tipo": [
+        "Salgado"
+      ],
       "culinária": {
         "id": 3,
         "label": "Vegana"
