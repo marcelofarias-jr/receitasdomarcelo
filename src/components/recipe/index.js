@@ -20,7 +20,9 @@ export default function PostRecipe() {
   }, []);
 
   useEffect(() => {
+    document.body.scrollTo(0, 0);
     handleLoadPosts(id);
+
   }, [id, handleLoadPosts]);
   console.log("item", item);
   console.log("preparation", preparation);

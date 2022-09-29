@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 import styles from "./Header.module.scss";
 import { useState } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function Header() {
+  const { pathname } = useLocation();
   const [show, setShow] = useState(false)
   let style
 
@@ -16,7 +19,14 @@ function Header() {
  if (show === false){
   style = {display: 'none'}
  }
-
+ useEffect(() =>{
+  window.scrollTo(0, 0);
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'instant',
+  });
+ },[pathname]);
   return (
     <header className={styles.menu}>
       <Container className={styles.menu__container}>
