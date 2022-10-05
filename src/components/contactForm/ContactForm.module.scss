@@ -2,22 +2,38 @@
 
 .ContactForm {
   // border: 1px solid purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   h3 {
     font-family: $title;
   }
-  form{
+
+  form {
     width: 60%;
-    div{
+
+    div {
       margin-bottom: .5rem;
     }
   }
-  button{
-    background-color: $light-red ;
+
+  button {
+    background-color: $light-red;
     border: 1px solid white;
-    &:hover{
+
+    &:hover {
       background-color: $red;
       border: 1px solid $red;
     }
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .ContactForm {
+    form {
+      width: 90%;
+    }
+  }
+
+}

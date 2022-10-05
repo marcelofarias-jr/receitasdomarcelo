@@ -2,6 +2,7 @@ import styles from "./List.module.scss";
 import { Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useCallback, useEffect, useState } from "react";
+import { style } from "@mui/system";
 
 export default function List({ data }) {
   const [dados, setDados] = useState([]);
@@ -31,10 +32,10 @@ export default function List({ data }) {
                     <Link to={`/receitas/${receita.id}`}>
                       <h3>{receita.titulo}</h3>
                     </Link>
-                    <Row>
+                    <div className={styles.lista_ultimas_info__tags}>
                       <p>{receita.tempoDePreparo}</p>
                       <p>{receita.rendimento}</p>
-                    </Row>
+                    </div>
                   </div>
                 </div>
               );
@@ -55,10 +56,10 @@ export default function List({ data }) {
                     <Link to={`/receitas/${receita.id}`}>
                       <h3>{receita.titulo}</h3>
                     </Link>
-                    <Row>
+                    <div className={styles.lista_ultimas_info__tags}>
                       <p>{receita.tempoDePreparo}</p>
                       <p>{receita.rendimento}</p>
-                    </Row>
+                    </div>
                   </div>
                 </div>
               );

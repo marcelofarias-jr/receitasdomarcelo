@@ -5,12 +5,11 @@ header {
   background-color: $light-yellow;
 }
 
-.header__content {
+.header__content{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
-
 }
 
 .header__logo {
@@ -32,6 +31,9 @@ header {
     margin: 0;
     padding: 0;
   }
+  .menu_item_mbl{
+    display: none;
+  }
   li{
     list-style: none;
     margin-left: 1rem;
@@ -47,13 +49,27 @@ header {
       }
     }
   }
-
-  @media only screen and (max-width: 768px){
-
-
 }
-
-
+  @media only screen and (max-width: 768px){
+    .header__content{
+      flex-direction: column;
+    }
+    .header__logo{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .header__nav{
+      width: 100%;
+      justify-content: center;
+      font-size: 18px;
+      .menu_item_dsk{
+        display: none;
+      }
+      .menu_item_mbl{
+        display: block;
+      }
+    }
 
 }
 

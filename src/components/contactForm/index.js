@@ -51,7 +51,7 @@ export default function ContactForm() {
   });
   return (
     <div className={styles.ContactForm}>
-      <h3>Entre em contato comigo</h3>
+      <h3>Entre em contato conosco</h3>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
