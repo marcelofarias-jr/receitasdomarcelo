@@ -5,6 +5,7 @@ import List from "../../components/list";
 import { useCallback, useEffect, useState } from "react";
 import { loadRecipe } from "../../API/load-recipe";
 import styles from "./Home.module.scss"
+import { Contact } from "../../components/contact";
 export default function Home() {
 const [dados, setDados] = useState([]);
 
@@ -22,6 +23,7 @@ const handleLoadPosts = useCallback(async () => {
     <main className={styles.home}>
         <Hero />
         <List data={dados}/>
+        <Contact />
     </main>
   )
 };

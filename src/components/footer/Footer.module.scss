@@ -1,56 +1,51 @@
 @import "../../assets/style/variables";
 
-footer{
-  padding: 50px 0;
-  background-color: $light-red;
-  color: white;
-  font-family: $paragraph;
-  ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  a{
-    text-decoration: none;
-    color: $light-yellow;
-    font-family: $paragraph;
-    &:hover{
-      color: $green;
-    }
-  }
-  h4{
-    font-family: $title;
-  }
-  p{
-    font-family: $paragraph;
-  }
-}
-.footer__content{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-.info{
-  text-align: center;
-  font-family: $paragraph;
-}
+// footer{
+//   padding: 50px 0;
+//   background-color: $light-red;
+//   color: white;
+//   font-family: $paragraph;
+//   ul{
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+//   }
+//   a{
+//     text-decoration: none;
+//     color: $light-yellow;
+//     font-family: $paragraph;
+//     &:hover{
+//       color: $green;
+//     }
+//   }
+//   h4{
+//     font-family: $title;
+//   }
+//   p{
+//     font-family: $paragraph;
+//   }
+// }
+// .footer__content{
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: nowrap;
+//   justify-content: space-between;
+// }
+// .info{
+//   text-align: center;
+//   font-family: $paragraph;
+// }
 
-@media only screen and (max-width: 768px){
-  .footer__content{
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
-    align-items: center;
-    justify-content: center
-  }
-  .sobre{
-    display: flex;
-    width: 100%;
-
-  }
+footer {
+  color: $black;
   .info{
-    margin-top: 2rem;
+    padding: 1rem 0;
+    font-family: $paragraph;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: $light-yellow;
+    font-weight: 600;
   }
-
 }
+

@@ -23,7 +23,7 @@ function Header() {
                   <Link to="/">Home</Link>
                 </li>
                 <li className={styles.menu_item_dsk}>
-                  <Link to="/contact">Contato</Link>
+                  <a href="#contato">Contato</a>
                 </li>
                 <li>
                   <Link to="/recipe" className={styles.menu_item_dsk}>Receitas</Link>
