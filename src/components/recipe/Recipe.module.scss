@@ -51,23 +51,25 @@
     text-align: left;
   }
   .revenue__left{
-    margin: 2rem 0 5rem 0;
+    margin: 2rem 0 0 0;
     max-width: 60vw;
   }
   .tags{
     padding: 0 0 3rem 0;
     display: flex;
+    justify-content: center;
     label{
+      width: auto;
       font-family: $paragraph;
       margin: 0rem 0.5rem;
-      padding: .5rem .5rem;
+      padding: .5rem 1.5rem;
       color: $red;
       background-color: $green;
       font-weight: 600;
-      width: 8rem;
       border-radius: 3rem;
       display: flex;
       justify-content: center;
+      white-space: nowrap;
     }
   }
 }
@@ -117,5 +119,9 @@
   .revenue__center{
     max-width: 80vw;
   }
-
+  .tags{
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 0 1em 0;
+  }
 }

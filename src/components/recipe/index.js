@@ -13,7 +13,6 @@ export default function PostRecipe() {
   const handleLoadPosts = useCallback(async (id) => {
     const recipesResponse = await loadRecipe();
     const idItem = id - 1;
-    // const dataIgre = (recipesResponse.receitas[idItem].igredientes)
     setPreparation(recipesResponse.receitas[idItem].preparo);
     setIngredients(recipesResponse.receitas[idItem].igredientes);
     setItem(recipesResponse.receitas[idItem]);

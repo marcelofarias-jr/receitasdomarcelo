@@ -2,7 +2,7 @@
 
 .destaque{
   width:100%;
-  height: 40rem;
+  height: auto;
   margin: 0px 0;
   span{
     height: 30px;
@@ -17,8 +17,12 @@
     font-family: $paragraph;
   }
 }
-.destaque img{
+.destaque {
   width:auto;
-  height:35rem;
+  height:100%;
+  img{
+    width:auto;
+    height:100%;
+  }
 }
 

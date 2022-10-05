@@ -1,7 +1,23 @@
 @import "../../assets/style/variables";
 
-.ContactForm{
-  h3{
+.ContactForm {
+  // border: 1px solid purple;
+  h3 {
     font-family: $title;
   }
+  form{
+    width: 60%;
+    div{
+      margin-bottom: .5rem;
+    }
+  }
+  button{
+    background-color: $light-red ;
+    border: 1px solid white;
+    &:hover{
+      background-color: $red;
+      border: 1px solid $red;
+    }
+  }
 }
+
