@@ -1,27 +1,34 @@
 import styles from "./List.module.scss";
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useCallback, useEffect, useState } from "react";
-import { style } from "@mui/system";
 
 export default function List({ data }) {
-  const [dados, setDados] = useState([]);
+  const [last, setLast] = useState([]);
+  const [more, setMore] = useState([]);
 
-  const handleLoadPosts = useCallback(async () => {
-    setDados(data);
-  }, [data]);
+  const handleLoadLastPosts = useCallback(async() => {
+    const last = data.length;
+    const lastArray = data.slice((last - 3), last)
+    setLast(lastArray);
+  },[data]);
+
+  const handleMoreViewPosts = useCallback(async () => {
+    const more = data.slice(0,3);
+    setMore(more);
+  },[data]);
 
   useEffect(() => {
-    handleLoadPosts();
-  }, [handleLoadPosts]);
-
+    handleLoadLastPosts();
+    handleMoreViewPosts();
+  }, [ handleLoadLastPosts, handleMoreViewPosts]);
   return (
     <Container>
       <section className={styles.lista}>
         <div className={styles.lista_ultimas}>
           <h2>Últimas receitas</h2>
           <div className={styles.lista_conteudo}>
-            {dados.map((receita) => {
+            {last.map((receita) => {
               return (
                 <div className={styles.lista_ultimas_item} key={receita.id}>
                   <img
@@ -45,7 +52,7 @@ export default function List({ data }) {
         <div className={styles.lista_acessadas}>
           <h2>Mais acessadas</h2>
           <div className={styles.lista_conteudo}>
-            {dados.map((receita) => {
+            {more.map((receita) => {
               return (
                 <div className={styles.lista_ultimas_item} key={receita.id}>
                   <img

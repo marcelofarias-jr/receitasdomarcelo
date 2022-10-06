@@ -50,7 +50,7 @@ export default function ContactForm() {
     name: Yup.string().required("Este campo é obrigatório"),
   });
   return (
-    <div className={styles.ContactForm} id="contato">
+    <div className={styles.ContactForm}>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}

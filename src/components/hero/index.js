@@ -1,15 +1,47 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import styles from "./Hero.module.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import Carousel from "react-bootstrap/Carousel";
 import { Container } from "react-bootstrap";
+import { loadRecipe } from "../../API/load-recipe";
 
-export default function Hero() {
+export default function Hero({data}) {
   const [index, setIndex] = useState(0);
+  const [highlights, setHighlights] = useState([]);
+  const [dados, setDados] = useState([]);
+
+
+  const handleLoadPosts = () => {
+    const recipesResponse =  loadRecipe();
+    setHighlights(recipesResponse.favoritos);
+    setDados(recipesResponse.receitas);
+  };
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
+  useEffect(() => {
+    handleLoadPosts();
+    console.log(dados)
+    // let resultado = dados.filter(h => h.id === (highlights[0].id))
+    // console.log('resultado', resultado);
+    // let teste = dados.filter(h => h.id === highlights[0].id);
+    // console.log('teste',teste);
+
+
+    // console.log('dados',dados);
+    // console.log('highlights',highlights)
+
+    // const [id] = highlights;
+    // console.log('id',id);
+
+
+  }, [dados]);
+  // console.log(highlights[0])
+  // id[0] = highlights[0]
+  // let teste = dados.filter(h => h.id === highlights[0].id);
+  // console.log('0', id[0])
+  // console.log('teste',teste[0].titulo);
   return (
     <Container>
       <section className={styles.destaque}>

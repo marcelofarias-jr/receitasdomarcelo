@@ -12,16 +12,15 @@ const [dados, setDados] = useState([]);
 const handleLoadPosts = useCallback(async () => {
   const recipesResponse = await loadRecipe();
   setDados(recipesResponse.receitas);
-}, []);
+}, [dados]);
 
   useEffect(() => {
     handleLoadPosts();
   }, [handleLoadPosts]);
 
-  console.log('Receitas', dados)
   return(
     <main className={styles.home}>
-        <Hero />
+        <Hero data={dados}/>
         <List data={dados}/>
         <Contact />
     </main>
