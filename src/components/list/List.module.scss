@@ -3,8 +3,7 @@
 .lista {
   display: flex;
   margin: 50px 30px;
-  height: auto;
-
+  height: 100%;
   h2 {
     color: $red;
     font-family: 'Poppins', sans-serif;
@@ -14,7 +13,7 @@
 .lista_ultimas {
   padding: 1rem;
   width: 50%;
-  height: auto;
+  height: 38rem;
   display: flex;
   flex-direction: column;
 
@@ -22,23 +21,43 @@
 .lista_ultimas_info{
   width: 100%;
   display: flex;
-  .lista_ultimas_info__tags{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15px;
+  a{
+    max-width: 12rem;
+  }
+
+}
+.lista_ultimas_info__tags{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 10rem;
+  padding-left: 1.5rem;
+  p{
+    width: 80%;
+    padding: .2rem .1rem;
+    background-color: #EBBB50;
+    color: white;
+    font-family: $paragraph;
+    text-align: center;
+    border-radius: 3rem;
+    margin: 0 10% 0 0;
   }
 }
+.lista_ultimas_item_img{
+  width: 100%;
+  height: 8rem;
+  margin-right: 1rem;
+}
 .lista_ultimas_item img {
-  width: 15rem;
+  width: 100%;
   height: auto;
   margin-right: 1rem;
   border: 3px solid $light-yellow;
 }
-
 .lista_ultimas_item {
   padding: 1rem .5rem;
-  margin: 0.3rem 0rem;
+  margin: 1rem 0rem;
   display: flex;
   align-items: center;
   width: 100%;
@@ -51,7 +70,6 @@
     box-shadow: 0px 0px 19px -4px rgba(61,60,66,1);
   }
 }
-
 .lista_ultimas_item a {
   text-decoration: none;
   color: $red;
