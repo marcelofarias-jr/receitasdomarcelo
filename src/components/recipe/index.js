@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styles from "./Recipe.module.scss";
 import { loadRecipe } from "../../API/load-recipe";
+import { Contact } from "../contact";
 
 export default function PostRecipe() {
   const [item, setItem] = useState([]);
@@ -21,12 +22,12 @@ export default function PostRecipe() {
   useEffect(() => {
     document.body.scrollTo(0, 0);
     handleLoadPosts(id);
-
   }, [id, handleLoadPosts]);
   console.log("item", item);
   console.log("preparation", preparation);
   return (
-    <div className={styles.revenue}>
+    <>
+      <div className={styles.revenue}>
         <div className={styles.revenue__center}>
           <h1>{item.titulo}</h1>
           {!!item.foto && (
@@ -66,6 +67,8 @@ export default function PostRecipe() {
             </div>
           </div>
         </div>
-    </div>
+      </div>
+      <Contact />
+    </>
   );
 }
