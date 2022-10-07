@@ -8,7 +8,6 @@ export default function Recipe(){
 
 const handleLoadPosts = useCallback(async () => {
   const recipesResponse = await loadRecipe();
-
   setDados(recipesResponse.receitas);
 }, []);
 
@@ -17,8 +16,11 @@ const handleLoadPosts = useCallback(async () => {
   }, [handleLoadPosts]);
   console.log('receitas',dados)
   return(
-    <Container className={styles.recipe}>
-      <h1>página de receitas</h1>
+    <div className={styles.recipe}>
+    <Container>
+      <h1>Confira todas as nossas receitas!</h1>
     </Container>
+    </div>
+
   )
 }
