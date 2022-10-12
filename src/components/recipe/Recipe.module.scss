@@ -1,20 +1,23 @@
 @import "../../assets/style/variables";
 
-.revenue{
+.revenue {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $light-yellow;
-  img{
+
+  img {
     width: 100%;
   }
-  h1{
+
+  h1 {
     margin: 3rem 0;
     font-family: $title;
     color: $red;
     font-weight: 500;
   }
-  p{
+
+  p {
     max-width: 1050px;
     margin: 2rem 0;
     font-size: 20px;
@@ -22,11 +25,13 @@
     text-align: left;
     font-family: $paragraph;
   }
-  ul{
+
+  ul {
     margin: 0;
     padding: 0;
   }
-  li{
+
+  li {
     // margin: 2rem 0;
     padding: 0;
     font-size: 20px;
@@ -37,28 +42,33 @@
     margin-bottom: .5rem;
     color: $black;
   }
-  h3{
+
+  h3 {
     font-family: $title;
     padding-top: 20px;
     font-size: 32px;
     color: $light-red;
   }
-  .revenue__center{
+
+  .revenue__center {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 60vw;
     text-align: left;
   }
-  .revenue__left{
+
+  .revenue__left {
     margin: 2rem 0 0 0;
     max-width: 60vw;
   }
-  .tags{
+
+  .tags {
     padding: 0 0 3rem 0;
     display: flex;
     justify-content: center;
-    label{
+
+    label {
       width: auto;
       font-family: $paragraph;
       margin: 0rem 0.5rem;
@@ -73,7 +83,8 @@
     }
   }
 }
-.revenue__ingredients{
+
+.revenue__ingredients {
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
@@ -81,18 +92,22 @@
   width: 100vw;
   translate: -20vw;
   background-color: $light-red;
-  div{
+
+  div {
     width: 60vw;
-    h3{
+
+    h3 {
       color: $green;
       margin-bottom: 2rem;
     }
-    li{
+
+    li {
       color: white;
     }
   }
 }
-.revenue__preparation{
+
+.revenue__preparation {
   padding: 3rem 0;
   width: 100vw;
   translate: -20vw;
@@ -100,28 +115,65 @@
   flex-direction: column;
   align-items: center;
   background-color: $green;
-  div{
+
+  div {
     width: 60vw;
-    h3{
+
+    h3 {
       color: $light-red;
       margin-bottom: 2rem;
     }
-    li{
+
+    li {
       color: $black;
     }
   }
 
 }
+
 //
 
 
-@media only screen and (max-width: 768px){
-  .revenue__center{
+@media only screen and (max-width: $md) {
+  .revenue__center {
     max-width: 80vw;
   }
-  .tags{
+
+  .tags {
     flex-direction: column;
     gap: 15px;
     padding: 0 0 1em 0;
+  }
+}
+
+@media only screen and (max-width: $mbl) {
+  .revenue {
+    p{
+      text-align: center;
+    }
+    .revenue__center {
+      width: 90vw;
+      max-width: 90vw;
+      text-align: center;
+    }
+
+    .revenue__left {
+      width: 90vw;
+      text-align: center;
+
+    }
+
+  }
+}
+
+.revenue__ingredients {
+  div {
+    width: 90vw;
+  }
+}
+
+.revenue__preparation {
+  div {
+    width: 90vw;
   }
 }

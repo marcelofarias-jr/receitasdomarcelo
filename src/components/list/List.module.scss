@@ -108,7 +108,7 @@
 }
 
 
-@media only screen and (max-width: 1186px){
+@media only screen and (max-width: $lg){
   .lista{
     flex-direction: column;
   }
@@ -126,7 +126,7 @@
     }
   }
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: $md){
   .lista{
     margin: 0;
   }
@@ -159,10 +159,11 @@
     text-align: center;
   }
 }
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: $mbl){
   .lista{
     height: 78rem;
     margin: 50px 0px;
+    margin-bottom: 79rem;
     h3{
       font-size: 1.25rem;
     }
@@ -199,9 +200,10 @@
     }
   }
 }
-@media only screen and (max-width:390px){
+@media only screen and (max-width: $sml){
   .lista{
     height: 105rem;
+    margin-bottom: 61rem;
     :nth-child(2) {
       h2{
         margin-top: 4rem;
