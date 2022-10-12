@@ -1,8 +1,8 @@
 @import "../../assets/style/variables";
 
 .contact{
+  border: 1px solid purple;
   width: 100%;
-  height: 100%;
   background-color: $light-red;
   font-family: $paragraph;
   color: white;
@@ -34,3 +34,9 @@
   }
 
 }
+@media only screen and (max-width: 390px) {
+  .contact{
+    margin-top: 31rem;
+  }
+}
+

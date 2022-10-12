@@ -3,7 +3,7 @@
 .lista {
   display: flex;
   margin: 50px 30px;
-  height: 100%;
+  height:auto;
   h2 {
     color: $red;
     font-family: 'Poppins', sans-serif;
@@ -13,10 +13,10 @@
 .lista_ultimas {
   padding: 1rem;
   width: 50%;
+  height:auto;
   height: 38rem;
   display: flex;
   flex-direction: column;
-
 }
 .lista_ultimas_info{
   width: 100%;
@@ -132,12 +132,10 @@
   }
   .lista_ultimas_info{
     flex-direction: column;
-    .lista_ultimas_info__tags{
       justify-content: center;
       align-items: center;
       gap: 5px;
     }
-  }
   .lista_ultimas{
     text-align: center;
   }
@@ -154,16 +152,44 @@
     h3{
       font-size: 1.25rem;
     }
+    .lista_ultimas_item_img{
+      display: flex;
+      align-items: center;
+      margin-right: 0;
+    }
     img{
       width: 10rem;
+      margin-right: 0;
+    }
+    h3{
+      margin-top: 1rem;
+    }
+    .lista_ultimas_info__tags{
+      margin-left: 0;
+      gap: 0;
+    }
+    .lista_ultimas{
+      height: 62rem;
+      div{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
     }
   }
 }
 @media only screen and (max-width:390px){
+  .lista{
+    height: 105rem;
+  }
+  .lista_ultimas{
+    height: 67rem;
+  }
   .lista_ultimas_item{
     display: flex;
     flex-direction: column;
     padding-top: 1.5rem;
+    height: auto;
   }
   .lista_ultimas_info{
     margin-top: 1rem;

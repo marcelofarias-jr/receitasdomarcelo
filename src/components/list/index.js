@@ -27,7 +27,7 @@ export default function List({ data }) {
       <section className={styles.lista}>
         <div className={styles.lista_ultimas}>
           <h2>Últimas receitas</h2>
-          <div className={styles.lista_conteudo}>
+          <div className={styles.lista_content}>
             {last.map((receita) => {
               return (
                 <div className={styles.lista_ultimas_item} key={receita.id}>
