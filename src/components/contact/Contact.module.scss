@@ -32,11 +32,16 @@
       max-width: 80%;
     }
   }
+}
 
+@media only screen and (max-width: 576px){
+  .contact{
+    margin-top: 79rem;
+  }
 }
 @media only screen and (max-width: 390px) {
   .contact{
-    margin-top: 31rem;
+    margin-top: 61rem;
   }
 }
 

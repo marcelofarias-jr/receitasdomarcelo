@@ -130,6 +130,11 @@
   .lista{
     margin: 0;
   }
+  .lista_ultimas_item_img{
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+  }
   .lista_ultimas_info{
     flex-direction: column;
       justify-content: center;
@@ -140,7 +145,15 @@
     text-align: center;
   }
   .lista_acessadas_info{
+    padding: .5rem;
     flex-direction: column;
+    h3{
+      font-size: 1.5rem;
+
+    }
+  }
+  .lista_ultimas_info__tags{
+    gap: 0;
   }
   .lista_acessadas{
     text-align: center;
@@ -148,6 +161,7 @@
 }
 @media only screen and (max-width: 576px){
   .lista{
+    height: 78rem;
     margin: 50px 0px;
     h3{
       font-size: 1.25rem;
@@ -157,9 +171,12 @@
       align-items: center;
       margin-right: 0;
     }
-    img{
-      width: 10rem;
-      margin-right: 0;
+    div {
+      width: 100%;
+      img {
+        width: 20rem;
+        margin-right: 0;
+      }
     }
     h3{
       margin-top: 1rem;
@@ -167,9 +184,10 @@
     .lista_ultimas_info__tags{
       margin-left: 0;
       gap: 0;
+      align-items: center;
     }
     .lista_ultimas{
-      height: 62rem;
+      height: 78rem;
       div{
         display: flex;
         flex-direction: column;
@@ -181,15 +199,26 @@
 @media only screen and (max-width:390px){
   .lista{
     height: 105rem;
+    :nth-child(2) {
+      h2{
+        margin-top: 4rem;
+      }
+    }
   }
   .lista_ultimas{
-    height: 67rem;
+    height: 78rem;
+
   }
   .lista_ultimas_item{
     display: flex;
     flex-direction: column;
     padding-top: 1.5rem;
     height: auto;
+  }
+  div{
+    img{
+      width: 80%;
+    }
   }
   .lista_ultimas_info{
     margin-top: 1rem;
