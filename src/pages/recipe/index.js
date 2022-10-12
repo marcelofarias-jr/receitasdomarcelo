@@ -38,7 +38,6 @@ export default function Recipe() {
                       <p>{receita.tempoDePreparo}</p>
                       <p>{receita.rendimento}</p>
                     </div>
-
                 </div>
               );
             })}
