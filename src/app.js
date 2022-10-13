@@ -8,6 +8,7 @@ import Recipe from './pages/recipe';
 import PostRecipe from './components/recipe';
 import Footer from './components/footer';
 import NotFound from './pages/notFound';
+import { Category } from './pages/category';
 
 export default function App (){
   return(
@@ -19,6 +20,7 @@ export default function App (){
           <Route path='/contact' element={<Contact />} />
           <Route path='/Recipe' element={<Recipe />} />
           <Route path='/receitas/:id' element={<PostRecipe />} />
+          <Route path='/category' element={<Category />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       <Footer />

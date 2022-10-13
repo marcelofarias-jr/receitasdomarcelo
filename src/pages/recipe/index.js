@@ -25,20 +25,21 @@ export default function Recipe() {
           {!!dados &&
             dados.map((receita, key) => {
               return (
-                <div className={styles.recipe__card} key={key}>
-                  <Link to={`/receitas/${receita.id}`}>
-                    <img
-                      src={require("../../assets/img/" + receita.foto + ".jpg")}
-                      alt={receita.resumo}
-                    />
+                  <div className={styles.recipe__card} key={key}>
+                    <Link to={`/receitas/${receita.id}`}>
+                      <img
+                        src={require("../../assets/img/" + receita.foto + ".jpg")}
+                        alt={receita.resumo}
+                      />
 
-                    <h2>{receita.titulo}</h2>
+                      <h2>{receita.titulo}</h2>
                     </Link>
                     <div className={styles.recipe__tags}>
                       <p>{receita.tempoDePreparo}</p>
                       <p>{receita.rendimento}</p>
                     </div>
-                </div>
+                  </div>
+
               );
             })}
         </div>

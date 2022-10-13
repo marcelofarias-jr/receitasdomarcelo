@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import styles from "./Map.module.scss";
 
 
@@ -12,7 +13,7 @@ export function Map() {
           <h4>Navegue pelas nossas categorias:</h4>
           <ul>
             <li>
-              <a href="#">Massas</a>
+              <Link to="/category/massas" className={styles.menu_item_dsk}>Massas</Link>
             </li>
             <li>
               <a href="#">Sobremesas</a>
