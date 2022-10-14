@@ -1,0 +1,16 @@
+@import "../../assets/style/variables";
+.category{
+  background-color: $light-yellow;
+  font-family: $paragraph;
+  &_content{
+    font-family: $paragraph;
+    text-align: center;
+    h1{
+      font-family: $title;
+    }
+    p{
+      font-family: $paragraph;
+    }
+  }
+
+}

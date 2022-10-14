@@ -19,32 +19,28 @@ function Header() {
           <div className={styles.header__nav}>
             <nav className={styles.menu_item}>
               <ul>
+                <li>
+                  <Link to="/recipe" className={styles.menu_item_dsk}>
+                    Receitas
+                  </Link>
+                </li>
                 <li className={styles.menu_item_dsk}>
-                  <Link to="/">Home</Link>
+                  <Link to="/category" className={styles.menu_item_dsk}>
+                    Categorias
+                  </Link>
                 </li>
                 <li className={styles.menu_item_dsk}>
                   <a href="#contato">Contato</a>
                 </li>
                 <li>
-                  <Link to="/recipe" className={styles.menu_item_dsk}>Receitas</Link>
-                </li>
-                <li>
-                  <Link to="/recipe" className={styles.menu_item_mbl}>Veja todas as nossas receitas</Link>
+                  <Link to="/recipe" className={styles.menu_item_mbl}>
+                    Veja todas as nossas receitas
+                  </Link>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
-        {/* <div className={styles.header__content__mbl}>
-          <div className={styles.header__logo}>
-          <a href="/">
-              <img
-                src={require("../../assets/img/logo-marcelo.png")}
-                alt="logo do site - Receitas do Marcelo"
-              />
-            </a>
-          </div>
-        </div> */}
       </Container>
     </header>
   );

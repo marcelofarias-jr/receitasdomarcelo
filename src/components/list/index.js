@@ -34,7 +34,7 @@ export default function List({ data }) {
                   <div className={styles.lista_ultimas_item_img}>
                     <img
                       src={require("../../assets/img/" + receita.foto + ".jpg")}
-                      alt={receita.resumo}
+                      alt={receita.titulo}
                     />
                   </div>
                   <div className={styles.lista_ultimas_info}>

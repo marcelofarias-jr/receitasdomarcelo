@@ -38,14 +38,16 @@
 
 footer {
   color: $black;
+  background-color: $light-yellow;
   .info{
-    padding: 1rem 0;
-    font-family: $paragraph;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    background-color: $light-yellow;
-    font-weight: 600;
+    div{
+      padding: 1rem 0;
+      font-family: $paragraph;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      font-weight: 600;
+    }
   }
 }
 

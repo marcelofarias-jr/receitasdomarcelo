@@ -1,12 +1,58 @@
 @import "../../assets/style/variables";
 
 .CategoryContent{
-  background-color: gray;
   text-align: center;
+  h1{
+    font-family: $title;
+  }
+  p{
+    font-family: $paragraph;
+    color: $red;
+  }
   &_cards{
     display: flex;
+    align-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
-    border: 1px solid red;
+    background-color: $green;
+    border-radius: 20px;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    h3{
+      color: inherit;
+      text-decoration: none;
+      font-family: $paragraph;
+    }
+    a{
+      color: inherit;
+      text-decoration: none;
+      font-family: $paragraph;
+    }
+  }
+  .CategoryContent_cards_img{
+    width: 50%;
+    img{
+      width: 70%;
+      border: 3px solid $light-yellow;
+    }
+  }
+  .CategoryContent_cards_info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 25rem;
+    .lista_ultimas_info__tags{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      p{
+        background-color: $yellow;
+        width: 15rem;
+        border-radius: 2rem;
+        padding: .2rem 0;
+      }
+    }
   }
 }
