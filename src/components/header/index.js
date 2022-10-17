@@ -37,6 +37,11 @@ function Header() {
                     Veja todas as nossas receitas
                   </Link>
                 </li>
+                <li>
+                <Link to="/category" className={styles.menu_item_mbl}>
+                    Categorias
+                  </Link>
+                </li>
               </ul>
             </nav>
           </div>

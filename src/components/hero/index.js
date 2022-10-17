@@ -1,9 +1,8 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./Hero.module.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import Carousel from "react-bootstrap/Carousel";
 import { Container } from "react-bootstrap";
-import { loadRecipe } from "../../API/load-recipe";
 
 export default function Hero({ data }) {
   const [index, setIndex] = useState(0);
@@ -13,9 +12,7 @@ export default function Hero({ data }) {
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
-  // useEffect(() => {
-  //   setDados(data);
-  // }, [data]);
+
   return (
     <Container>
       <section className={styles.destaque}>
