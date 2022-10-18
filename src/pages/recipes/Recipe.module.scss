@@ -37,6 +37,7 @@
       color: $light-red;
     }
   }
+
   .recipe__cards {
     width: 100%;
     display: flex;
@@ -88,7 +89,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: $lg) {
   .recipe {
     .recipe__card {
       flex-direction: column;
@@ -104,35 +105,40 @@
 
 @media only screen and (max-width: 991px) {
   .recipe {
-    border: 1px solid red;
     .recipe__tags {
       margin-top: 0;
     }
+
     .recipe__card {
       h2 {
         margin-top: 1rem;
       }
+
       p {
         margin: 0;
       }
     }
+
     a {
       flex-direction: column;
     }
   }
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: $md) {
   .recipe__tags {
     flex-wrap: wrap;
-    p{
+
+    p {
       margin-bottom: 1rem !important;
     }
+
     margin-top: 0;
   }
 }
-@media only screen and (max-width: 576px){
+
+@media only screen and (max-width:$mbl) {
   .recipe__card {
-      width: 100% !important;
+    width: 100% !important;
   }
 }

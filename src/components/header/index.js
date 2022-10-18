@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import styles from "./Header.module.scss";
 
 function Header() {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(true);
   return (
     <header>
       <Container>
@@ -34,9 +34,7 @@ function Header() {
                 <li className={styles.menu_item_dsk}>
                   <a href="#contato">Contato</a>
                 </li>
-                {(open === true)&&(
-                  <p>menu mbl</p>
-                )}
+
                 {/* <li>
                   <Link to="/recipe" className={styles.menu_item_mbl}>
                     Veja todas as nossas receitas
@@ -50,6 +48,29 @@ function Header() {
               </ul>
             </nav>
           </div>
+        </div>
+        <div className={styles.menu__mbl}>
+          <button
+            onClick={(e) => {
+              setOpen(!open);
+              console.log("open", open);
+            }}
+          >
+            <img
+              src={require("../../assets/img/logo-marcelo.png")}
+              alt="logo do site - Receitas do Marcelo"
+            />
+          </button>
+          {open === true && (
+            <div className={styles.menu_mbl_itens}>
+              <Link to="/recipe" className={styles.menu_item_mbl}>
+                Todas as receitas
+              </Link>
+              <Link to="/category" className={styles.menu_item_mbl}>
+                Todas as cetegorias
+              </Link>
+            </div>
+          )}
         </div>
       </Container>
     </header>
