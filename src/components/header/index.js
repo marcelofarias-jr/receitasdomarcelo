@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import styles from "./Header.module.scss";
 
 function Header() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <header>
       <Container>
@@ -34,17 +34,6 @@ function Header() {
                 <li className={styles.menu_item_dsk}>
                   <a href="#contato">Contato</a>
                 </li>
-
-                {/* <li>
-                  <Link to="/recipe" className={styles.menu_item_mbl}>
-                    Veja todas as nossas receitas
-                  </Link>
-                </li>
-                <li>
-                <Link to="/category" className={styles.menu_item_mbl}>
-                    Categorias
-                  </Link>
-                </li> */}
               </ul>
             </nav>
           </div>
@@ -53,7 +42,6 @@ function Header() {
           <button
             onClick={(e) => {
               setOpen(!open);
-              console.log("open", open);
             }}
           >
             <img
@@ -63,6 +51,9 @@ function Header() {
           </button>
           {open === true && (
             <div className={styles.menu_mbl_itens}>
+              <Link to="/" className={styles.menu_item_mbl}>
+                Home
+              </Link>
               <Link to="/recipe" className={styles.menu_item_mbl}>
                 Todas as receitas
               </Link>
@@ -76,53 +67,5 @@ function Header() {
     </header>
   );
 }
-
-// <header className={styles.menu}>
-//   <Container className={styles.menu__container}>
-//     <div className={styles.menu__desktop}>
-//       <section className={styles.logo}>
-//         <a href="/">
-//           <img
-//             src={require("../../assets/img/logo-marcelo.png")}
-//             alt="logo do site - Receitas do Marcelo"
-//           />
-//         </a>
-//       </section>
-//       <nav className={styles.menu_item}>
-//         <ul>
-//           <li>
-//             <Link to="/">Home</Link>
-//           </li>
-//           <li>
-//             <Link to="/contact">Contato</Link>
-//           </li>
-//           <li>
-//             <Link to="/recipe">Receitas</Link>
-//           </li>
-//         </ul>
-//       </nav>
-//     </div>
-//     <div className={styles.menu__mble} >
-//       <button>
-//         <HiOutlineMenu />
-//       </button>
-//       <div className={styles.menu__mble__content} style={style}>
-//         <nav className={styles.menu_item__mbl}>
-//           <ul>
-//             <li>
-//               <Link to="/">Home</Link>
-//             </li>
-//             <li>
-//               <Link to="/contact">Contato</Link>
-//             </li>
-//             <li>
-//               <Link to="/recipe">Receitas</Link>
-//             </li>
-//           </ul>
-//         </nav>
-//       </div>
-//     </div>
-//   </Container>
-// </header>
 
 export default Header;
