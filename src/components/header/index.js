@@ -1,9 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { useState } from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styles from "./Header.module.scss";
 
 function Header() {
+  const [open, setOpen] = useState(true)
   return (
     <header>
       <Container>
@@ -32,7 +34,10 @@ function Header() {
                 <li className={styles.menu_item_dsk}>
                   <a href="#contato">Contato</a>
                 </li>
-                <li>
+                {(open === true)&&(
+                  <p>menu mbl</p>
+                )}
+                {/* <li>
                   <Link to="/recipe" className={styles.menu_item_mbl}>
                     Veja todas as nossas receitas
                   </Link>
@@ -41,7 +46,7 @@ function Header() {
                 <Link to="/category" className={styles.menu_item_mbl}>
                     Categorias
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </nav>
           </div>
