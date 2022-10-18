@@ -31,14 +31,12 @@ export default function Recipe() {
                       src={require("../../assets/img/" + receita.foto + ".jpg")}
                       alt={receita.resumo}
                     />
-
                     <h2>{receita.titulo}</h2>
-                    </Link>
-                    <div className={styles.recipe__tags}>
-                      <p>{receita.tempoDePreparo}</p>
-                      <p>{receita.rendimento}</p>
-                    </div>
-
+                  </Link>
+                  <div className={styles.recipe__tags}>
+                    <p>{receita.tempoDePreparo}</p>
+                    <p>{receita.rendimento}</p>
+                  </div>
                 </div>
               );
             })}
@@ -46,6 +44,5 @@ export default function Recipe() {
       </Container>
       <Contact />
     </div>
-
   );
 }

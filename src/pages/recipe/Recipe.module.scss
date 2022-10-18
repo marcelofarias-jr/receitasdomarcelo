@@ -34,12 +34,12 @@
       color: $light-red;
     }
   }
-
   .recipe__cards {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 2rem;
   }
   .recipe__card{
     width: 49%;

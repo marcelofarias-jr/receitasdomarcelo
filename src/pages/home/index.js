@@ -15,14 +15,15 @@ const handleLoadPosts = useCallback(async () => {
   setDados(recipesResponse.receitas);
   let teste = dados.filter(x => x.destaque === true)
   setFav(teste)
-
+  let aves = dados.filter(x => x.tipo === 'aves')
+  console.log('aves', aves)
 }, [dados]);
 
   useEffect(() => {
     handleLoadPosts();
-  }, [handleLoadPosts]);
+  }, []);
 // console.log('home',dados)
-// console.log('teste',fav)
+console.log('teste',fav)
   return(
     <main className={styles.home}>
         <Hero data={fav}/>
