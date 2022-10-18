@@ -5,12 +5,13 @@ import styles from "./Footer.module.scss";
 export default function Footer() {
   return (
     <footer>
-      <Map />
-      <Container>
-        <div className={styles.info}>
+      {/* <Map /> */}
+
+      <div className={styles.info}>
+        <Container>
           © Copyright 2022 - Todos os direitos reservados - Receitas do Marcelo
-        </div>
-      </Container>
+        </Container>
+      </div>
     </footer>
   );
 }

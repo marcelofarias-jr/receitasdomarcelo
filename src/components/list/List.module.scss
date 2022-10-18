@@ -3,7 +3,7 @@
 .lista {
   display: flex;
   margin: 50px 30px;
-  height: 100%;
+  height:auto;
   h2 {
     color: $red;
     font-family: 'Poppins', sans-serif;
@@ -13,10 +13,10 @@
 .lista_ultimas {
   padding: 1rem;
   width: 50%;
+  height:auto;
   height: 38rem;
   display: flex;
   flex-direction: column;
-
 }
 .lista_ultimas_info{
   width: 100%;
@@ -108,7 +108,7 @@
 }
 
 
-@media only screen and (max-width: 1186px){
+@media only screen and (max-width: $lg){
   .lista{
     flex-direction: column;
   }
@@ -126,44 +126,104 @@
     }
   }
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: $md){
   .lista{
     margin: 0;
   }
+  .lista_ultimas_item_img{
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+  }
   .lista_ultimas_info{
     flex-direction: column;
-    .lista_ultimas_info__tags{
       justify-content: center;
       align-items: center;
       gap: 5px;
     }
-  }
   .lista_ultimas{
     text-align: center;
   }
   .lista_acessadas_info{
+    padding: .5rem;
     flex-direction: column;
+    h3{
+      font-size: 1.5rem;
+
+    }
+  }
+  .lista_ultimas_info__tags{
+    gap: 0;
   }
   .lista_acessadas{
     text-align: center;
   }
 }
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: $mbl){
   .lista{
+    height: 78rem;
     margin: 50px 0px;
+    margin-bottom: 79rem;
     h3{
       font-size: 1.25rem;
     }
-    img{
-      width: 10rem;
+    .lista_ultimas{
+      padding: 0;
+    }
+    .lista_ultimas_item_img{
+      display: flex;
+      align-items: center;
+      margin-right: 0;
+    }
+    div {
+      width: 100%;
+      img {
+        width: 20rem;
+        margin-right: 0;
+      }
+    }
+    h3{
+      margin-top: 1rem;
+    }
+    .lista_ultimas_info__tags{
+      margin-left: 0;
+      gap: 0;
+      align-items: center;
+    }
+    .lista_ultimas{
+      height: 78rem;
+      div{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
     }
   }
 }
-@media only screen and (max-width:390px){
+@media only screen and (max-width: $sml){
+  .lista{
+    height: 105rem;
+    margin-bottom: 61rem;
+    :nth-child(2) {
+      h2{
+        margin-top: 4rem;
+      }
+    }
+  }
+  .lista_ultimas{
+    height: 78rem;
+
+  }
   .lista_ultimas_item{
     display: flex;
     flex-direction: column;
     padding-top: 1.5rem;
+    height: auto;
+  }
+  div{
+    img{
+      width: 80%;
+    }
   }
   .lista_ultimas_info{
     margin-top: 1rem;
