@@ -148,15 +148,15 @@
       text-align: center;
     }
     .revenue__center {
-      width: 90vw;
-      max-width: 90vw;
       text-align: center;
     }
 
     .revenue__left {
-      width: 90vw;
       text-align: center;
-
+      .tags{
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+      }
     }
 
   }
