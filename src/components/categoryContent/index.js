@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./CategoryContent.module.scss";
-export const CategoryContent = ({ dados, category }) => {
+export const  CategoryContent = ({ dados, category }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {

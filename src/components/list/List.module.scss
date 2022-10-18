@@ -52,7 +52,7 @@
 }
 .lista_ultimas_item img {
   width: 100%;
-  height: auto;
+  height: 8rem;
   margin-right: 1rem;
   border: 3px solid $light-yellow;
 }
@@ -161,14 +161,15 @@
 }
 @media only screen and (max-width: $mbl){
   .lista{
-    height: 78rem;
+    height: 84rem;
     margin: 50px 0px;
     margin-bottom: 79rem;
     h3{
       font-size: 1.25rem;
     }
     .lista_ultimas{
-      padding: 0;
+      padding: 2rem 0;
+      height: 80rem;
     }
     .lista_ultimas_item_img{
       display: flex;
@@ -179,6 +180,7 @@
       width: 100%;
       img {
         width: 20rem;
+        height: 13rem;
         margin-right: 0;
       }
     }
@@ -191,7 +193,7 @@
       align-items: center;
     }
     .lista_ultimas{
-      height: 78rem;
+      height: 80rem;
       div{
         display: flex;
         flex-direction: column;
@@ -202,7 +204,7 @@
 }
 @media only screen and (max-width: $sml){
   .lista{
-    height: 105rem;
+    height: 110rem;
     margin-bottom: 61rem;
     :nth-child(2) {
       h2{

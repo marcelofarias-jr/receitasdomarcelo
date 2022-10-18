@@ -21,7 +21,7 @@ const handleLoadPosts = useCallback(async () => {
 
   useEffect(() => {
     handleLoadPosts();
-  }, []);
+  }, [dados]);
 // console.log('home',dados)
 console.log('teste',fav)
   return(

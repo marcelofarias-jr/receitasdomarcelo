@@ -6,21 +6,18 @@ import { Container } from "react-bootstrap";
 
 export default function Hero({ data }) {
   const [index, setIndex] = useState(0);
-  const [highlights, setHighlights] = useState([]);
-  const [dados, setDados] = useState([data]);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
-
   return (
     <Container>
       <section className={styles.destaque}>
         <Carousel activeIndex={index} onSelect={handleSelect}>
-          { data.map((receita, key)=>{
+          { data.map((receita)=>{
               return(
-                <Carousel.Item>
-                <div id={key}>
+                <Carousel.Item key={receita.id}>
+                <div >
                   <img
                       src={require('../../assets/img/' + receita.foto + '.jpg')}
                       alt={receita.resumo}

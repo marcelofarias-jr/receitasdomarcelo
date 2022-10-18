@@ -5,18 +5,15 @@
   flex-direction: column;
   align-items: center;
   background-color: $light-yellow;
-
   img {
     width: 100%;
   }
-
   h1 {
     margin: 3rem 0;
     font-family: $title;
     color: $red;
     font-weight: 500;
   }
-
   p {
     max-width: 1050px;
     margin: 2rem 0;
@@ -25,12 +22,10 @@
     text-align: left;
     font-family: $paragraph;
   }
-
   ul {
     margin: 0;
     padding: 0;
   }
-
   li {
     // margin: 2rem 0;
     padding: 0;
@@ -42,7 +37,6 @@
     margin-bottom: .5rem;
     color: $black;
   }
-
   h3 {
     font-family: $title;
     padding-top: 20px;
@@ -59,8 +53,7 @@
   }
 
   .revenue__left {
-    margin: 2rem 0 0 0;
-    max-width: 60vw;
+    width: 100%;
   }
 
   .tags {
@@ -89,10 +82,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  translate: -20vw;
+  width: 100%;
+  // width: 100vw;
   background-color: $light-red;
-
   div {
     width: 60vw;
 
@@ -100,7 +92,9 @@
       color: $green;
       margin-bottom: 2rem;
     }
-
+    ul{
+      max-width: 66%;
+    }
     li {
       color: white;
     }
@@ -109,8 +103,8 @@
 
 .revenue__preparation {
   padding: 3rem 0;
-  width: 100vw;
-  translate: -20vw;
+  // width: 100vw;
+  // translate: -20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,7 +117,9 @@
       color: $light-red;
       margin-bottom: 2rem;
     }
-
+    ul{
+      max-width: 66%;
+    }
     li {
       color: $black;
     }
