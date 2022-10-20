@@ -1,11 +1,23 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { loadRecipe } from "../../API/load-recipe";
 import styles from "./Header.module.scss";
 
 function Header() {
   const [open, setOpen] = useState(false);
+  const [dados, setDados] = useState([]);
+
+  const handleLoadPosts = useCallback(async () => {
+    const recipesResponse = await loadRecipe();
+    setDados(recipesResponse.receitas);
+  }, []);
+
+    useEffect(() => {
+      handleLoadPosts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [dados]);
   return (
     <header>
       <Container>

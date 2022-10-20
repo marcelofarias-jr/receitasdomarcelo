@@ -8,11 +8,11 @@ import styles from "./Category.module.scss";
 export function Category() {
   const [dados, setDados] = useState([]);
   const [category, setCategory] = useState("");
+  const [allCategory, setAllCategory] = useState([])
 
   const handleCategory = useCallback(
     async (theCategory) => {
       setCategory(theCategory);
-      console.log(category);
     },
     [category]
   );
@@ -20,19 +20,34 @@ export function Category() {
   const handleLoadPosts = useCallback(async () => {
     const recipesResponse = await loadRecipe();
     setDados(recipesResponse.receitas);
+    setAllCategory(recipesResponse.categorias);
+
   }, []);
 
   useEffect(() => {
     handleLoadPosts();
-  }, [handleLoadPosts, handleCategory, category]);
-
+  }, [handleLoadPosts]);
   return (
     <>
       <section className={styles.category}>
         <Container>
           <div className={styles.category_content}>
             <h1>Categorias</h1>
-            <Button
+            {allCategory.map((cat)=>{
+              return(
+                <Button
+                variant="contained"
+                key={cat.id}
+                onClick={(e) => {
+                  handleCategory(cat.nome);
+                }}
+              >
+                {cat.nome}
+              </Button>
+              )
+
+            })}
+            {/* <Button
               variant="contained"
               // className={styled.submit}
               onClick={(e) => {
@@ -56,15 +71,17 @@ export function Category() {
               onClick={(e) => {
                 handleCategory("Acompanhamentos");
               }}
-            >Acompanhamentos
+            >
+              Acompanhamentos
             </Button>
             <Button
               variant="contained"
               // className={styled.submit}
               onClick={(e) => {
-                handleCategory("Carnes suína");
+                handleCategory("Carnes suínas");
               }}
-            >Carnes suína
+            >
+              Carnes suínas
             </Button>
             <Button
               variant="contained"
@@ -72,8 +89,9 @@ export function Category() {
               onClick={(e) => {
                 handleCategory("Doces");
               }}
-            >Doces
-            </Button>
+            >
+              Doces
+            </Button> */}
           </div>
           <CategoryContent dados={dados} category={category} />
         </Container>

@@ -5,19 +5,19 @@ export const  CategoryContent = ({ dados, category }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    console.log("dados", dados);
     let cat = dados.filter((x) => x.tipo === category);
-    console.log("cat", cat);
     setData(cat);
   }, [category, dados]);
-  console.log("category", category);
+  console.log('category', data)
+  console.log('category2', dados)
+  console.log('category3', category)
   return (
     <section className={styles.CategoryContent}>
       {category === "" ? (
         <p>Selecione uma categoria</p>
       ) : (
         <>
-          <h1>Confira todas as nossas receitas de {category.toLowerCase()}</h1>
+          <h1>Confira todas as nossas receitas de {category}</h1>
           {data.map((receita) => {
             return (
               <div className={styles.CategoryContent_cards}>
@@ -30,7 +30,6 @@ export const  CategoryContent = ({ dados, category }) => {
                 <div className={styles.CategoryContent_cards_info}>
                   <Link to={`/receitas/${receita.id}`}>
                     <h3>{receita.titulo}</h3>
-
                   </Link>
                   <p>{receita.resumo}</p>
                   <div className={styles.lista_ultimas_info__tags}>

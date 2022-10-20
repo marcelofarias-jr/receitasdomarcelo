@@ -16,7 +16,6 @@ export default function Recipes() {
   useEffect(() => {
     handleLoadPosts();
   }, [handleLoadPosts]);
-  console.log("receitas", dados);
   return (
     <div className={styles.recipe}>
       <Container>

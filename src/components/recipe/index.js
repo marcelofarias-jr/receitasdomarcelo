@@ -23,8 +23,6 @@ export default function Recipe() {
     document.body.scrollTo(0, 0);
     handleLoadPosts(id);
   }, [id, handleLoadPosts]);
-  console.log("item", item);
-  console.log("preparation", preparation);
   return (
     <div className={styles.revenue}>
       <div className={styles.revenue__center}>

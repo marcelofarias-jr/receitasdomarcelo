@@ -3,13 +3,14 @@
 header {
   width: 100%;
   background-color: $light-yellow;
+  padding: 1rem 0;
 }
 
 .header__content{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+
 }
 .menu__mbl{
   display: none;
@@ -88,6 +89,7 @@ header {
 }
 @media only screen and (max-width: $sml){
   .menu__mbl{
+    margin: 1rem 0;
     img{
       width: auto;
     }
