@@ -1,0 +1,52 @@
+@import "../../assets/style/variables";
+.search{
+  margin: 2rem 0;
+  p{
+    font-family: $paragraph;
+    text-align: justify;
+  }
+}
+.recipe__card {
+  line-height: 2rem;
+  width: 100%;
+  padding: 1rem 1rem;
+  margin: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  background-color: $green;
+  border-radius: 15px;
+  &:hover {
+    -webkit-box-shadow: 0px 0px 19px -4px rgba(61, 60, 66, 1);
+    -moz-box-shadow: 0px 0px 19px -4px rgba(61, 60, 66, 1);
+    box-shadow: 0px 0px 19px -4px rgba(61, 60, 66, 1);
+  }
+  img{
+    width: 12rem;
+    height: 8rem;
+  }
+  .resumo{
+    padding: 0 2rem;
+    text-align: center;
+  }
+}
+.recipe__tags {
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  p {
+    width: 100%;
+    white-space: nowrap;
+    padding: .2rem .1rem;
+    background-color: #EBBB50;
+    color: white;
+    font-family: $paragraph;
+    text-align: center;
+    border-radius: 3rem;
+    margin: 0 10% 0 0;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+

@@ -8,9 +8,7 @@ export const  CategoryContent = ({ dados, category }) => {
     let cat = dados.filter((x) => x.tipo === category);
     setData(cat);
   }, [category, dados]);
-  console.log('category', data)
-  console.log('category2', dados)
-  console.log('category3', category)
+
   return (
     <section className={styles.CategoryContent}>
       {category === "" ? (
