@@ -50,3 +50,13 @@
   }
 }
 
+@media only screen and (max-width: $md) {
+  .recipe__card{
+    padding-top: 2rem;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  img{
+    margin-bottom: 2rem;
+  }
+}

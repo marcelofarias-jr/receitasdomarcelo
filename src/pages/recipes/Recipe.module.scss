@@ -130,6 +130,9 @@
 }
 
 @media only screen and (max-width: $md) {
+  .recipe_header{
+    flex-direction: column;
+  }
   .recipe__tags {
     flex-wrap: wrap;
 
