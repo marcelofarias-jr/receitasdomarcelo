@@ -14,7 +14,7 @@ export function Category() {
     async (theCategory) => {
       setCategory(theCategory);
     },
-    [category]
+    []
   );
 
   const handleLoadPosts = useCallback(async () => {

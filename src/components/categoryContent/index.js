@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./CategoryContent.module.scss";
-export const  CategoryContent = ({ dados, category }) => {
+export const CategoryContent = ({ dados, category }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -15,8 +15,12 @@ export const  CategoryContent = ({ dados, category }) => {
         <p>Selecione uma categoria</p>
       ) : (
         <>
-          <h1>Confira todas as nossas receitas de {category}</h1>
-          {data.length === 0 && <p>Não existe nenhuma receita nesta categoria</p> }
+          {data.length !== 0 && (
+            <h1>Confira todas as nossas receitas de {category}</h1>
+          )}
+          {data.length === 0 && (
+            <p>Não existe nenhuma receita nesta categoria</p>
+          )}
           {data.map((receita) => {
             return (
               <div className={styles.CategoryContent_cards}>
