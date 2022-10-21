@@ -63,14 +63,14 @@ function Header() {
           </button>
           {open === true && (
             <div className={styles.menu_mbl_itens}>
-              <Link to="/" className={styles.menu_item_mbl}>
+              <Link to="/" className={styles.menu_item_mbl}  onClick={(e) => {setOpen(!open);}}>
                 Home
               </Link>
-              <Link to="/recipe" className={styles.menu_item_mbl}>
+              <Link to="/recipe" className={styles.menu_item_mbl} onClick={(e) => {setOpen(!open);}}>
                 Todas as receitas
               </Link>
-              <Link to="/category" className={styles.menu_item_mbl}>
-                Todas as cetegorias
+              <Link to="/category" className={styles.menu_item_mbl} onClick={(e) => {setOpen(!open);}}>
+                Todas as categorias
               </Link>
             </div>
           )}

@@ -31,7 +31,9 @@
       font-family: $title;
       color: white;
     }
-
+    a{
+      text-decoration: none;
+    }
     p {
       font-family: $paragraph;
       font-size: 1.2rem;
