@@ -29,7 +29,7 @@ export const  CategoryContent = ({ dados, category }) => {
                   <Link to={`/receitas/${receita.id}`}>
                     <h3>{receita.titulo}</h3>
                   </Link>
-                  <p>{receita.resumo}</p>
+                  <p className={styles.card_summary}>{receita.resumo}</p>
                   <div className={styles.lista_ultimas_info__tags}>
                     <p>{receita.tempoDePreparo}</p>
                     <p>{receita.rendimento}</p>

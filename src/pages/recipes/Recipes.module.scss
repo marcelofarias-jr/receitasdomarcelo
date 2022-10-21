@@ -97,7 +97,6 @@
   .recipe {
     .recipe__card {
       flex-direction: column;
-
       .recipe__tags {
         flex-direction: row;
         margin-top: 2rem;
@@ -132,6 +131,11 @@
 @media only screen and (max-width: $md) {
   .recipe_header{
     flex-direction: column;
+    align-items: center;
+    input{
+      margin: 2rem 0;
+      width: 80%;
+    }
   }
   .recipe__tags {
     flex-wrap: wrap;

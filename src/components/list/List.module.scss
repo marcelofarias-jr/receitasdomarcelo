@@ -161,7 +161,7 @@
 }
 @media only screen and (max-width: $mbl){
   .lista{
-    height: 84rem;
+    height: 100rem;
     margin: 50px 0px;
     margin-bottom: 79rem;
     h3{
@@ -169,7 +169,7 @@
     }
     .lista_ultimas{
       padding: 2rem 0;
-      height: 80rem;
+      height: 88rem;
     }
     .lista_ultimas_item_img{
       display: flex;
@@ -193,7 +193,7 @@
       align-items: center;
     }
     .lista_ultimas{
-      height: 80rem;
+      height: 88rem;
       div{
         display: flex;
         flex-direction: column;

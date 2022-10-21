@@ -48,15 +48,18 @@
   .CategoryContent_cards_info {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
     width: 50%;
     max-width: 25rem;
-
+    .card_summary{
+      margin-bottom: 2rem;
+    }
     .lista_ultimas_info__tags {
       display: flex;
       flex-direction: column;
       align-items: center;
       align-content: center;
-
       p {
         background-color: $yellow;
         width: 15rem;

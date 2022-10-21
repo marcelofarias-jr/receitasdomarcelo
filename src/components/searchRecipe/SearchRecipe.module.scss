@@ -1,13 +1,14 @@
 @import "../../assets/style/variables";
-.search{
-  margin: 2rem 0;
-  p{
-    font-family: $paragraph;
-    text-align: justify;
-  }
+
+.recipe__cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
 }
+
 .recipe__card {
-  line-height: 2rem;
   width: 100%;
   padding: 1rem 1rem;
   margin: 1rem 0rem;
@@ -15,28 +16,45 @@
   align-items: center;
   background-color: $green;
   border-radius: 15px;
+  gap: 1.5rem;
+  justify-content: space-around;
+
   &:hover {
     -webkit-box-shadow: 0px 0px 19px -4px rgba(61, 60, 66, 1);
     -moz-box-shadow: 0px 0px 19px -4px rgba(61, 60, 66, 1);
     box-shadow: 0px 0px 19px -4px rgba(61, 60, 66, 1);
   }
-  img{
-    width: 12rem;
-    height: 8rem;
-  }
-  .resumo{
-    padding: 0 2rem;
-    text-align: center;
+}
+.recipe__card__photo {
+  img {
+    width: 15rem;
   }
 }
-.recipe__tags {
-  height: 80%;
+.recipe__card__info {
+  max-width: 40rem;
+
+  a {
+    font-family: $paragraph;
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      font-weight: 600;
+      color: $light-red;
+    }
+  }
+  span {
+    font-family: $paragraph;
+  }
+}
+.recipe__card__tag {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 10px;
+  flex-direction: column;
+  gap: 15px;
   p {
-    width: 100%;
+    width: 13rem;
     white-space: nowrap;
     padding: .2rem .1rem;
     background-color: #EBBB50;
@@ -46,17 +64,19 @@
     border-radius: 3rem;
     margin: 0 10% 0 0;
     font-weight: 600;
-    margin: 0;
   }
 }
 
-@media only screen and (max-width: $md) {
+//Responsivo
+@media only screen and (max-width: 992px) {
   .recipe__card{
-    padding-top: 2rem;
-    gap: 2rem;
     flex-direction: column;
   }
-  img{
-    margin-bottom: 2rem;
+}
+@media only screen and (max-width: $md) {
+  .recipe__card{
+    img{
+      margin-bottom: 0;
+    }
   }
 }

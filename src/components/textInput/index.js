@@ -1,4 +1,5 @@
 
+import styles from "./TextInput.module.scss";
 
 export default function InputText({ searchValue, handleChange }) {
 
