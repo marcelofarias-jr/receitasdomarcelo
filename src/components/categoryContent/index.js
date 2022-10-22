@@ -12,7 +12,7 @@ export const CategoryContent = ({ dados, category }) => {
   return (
     <section className={styles.CategoryContent}>
       {category === "" ? (
-        <p>Selecione uma categoria</p>
+        <p className={styles.no_recipe}>Selecione uma categoria</p>
       ) : (
         <>
           {data.length !== 0 && (

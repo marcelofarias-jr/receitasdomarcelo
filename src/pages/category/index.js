@@ -27,6 +27,7 @@ export function Category() {
   useEffect(() => {
     handleLoadPosts();
   }, [handleLoadPosts]);
+  console.log('all', allCategory)
   return (
     <>
       <section className={styles.category}>
