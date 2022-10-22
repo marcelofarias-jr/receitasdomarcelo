@@ -21,7 +21,7 @@ export default function Hero({ data }) {
                 <div>
                   <img
                     src={require("../../assets/img/" + receita.foto + ".jpg")}
-                    alt={receita.resumo}
+                    alt={receita.titulo}
                   />
                   <Carousel.Caption>
                     <div className={styles.caption}>

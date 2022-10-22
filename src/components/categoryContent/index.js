@@ -19,7 +19,7 @@ export const CategoryContent = ({ dados, category }) => {
             <h1>Confira todas as nossas receitas de {category}</h1>
           )}
           {data.length === 0 && (
-            <p>Não existe nenhuma receita nesta categoria</p>
+            <p className={styles.no_recipe}>Não existe nenhuma receita nesta categoria</p>
           )}
           {data.map((receita) => {
             return (

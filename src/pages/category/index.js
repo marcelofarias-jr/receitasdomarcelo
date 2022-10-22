@@ -47,51 +47,6 @@ export function Category() {
               )
 
             })}
-            {/* <Button
-              variant="contained"
-              // className={styled.submit}
-              onClick={(e) => {
-                handleCategory("Aves");
-              }}
-            >
-              Aves
-            </Button>
-            <Button
-              variant="contained"
-              // className={styled.submit}
-              onClick={(e) => {
-                handleCategory("Massas");
-              }}
-            >
-              Massas
-            </Button>
-            <Button
-              variant="contained"
-              // className={styled.submit}
-              onClick={(e) => {
-                handleCategory("Acompanhamentos");
-              }}
-            >
-              Acompanhamentos
-            </Button>
-            <Button
-              variant="contained"
-              // className={styled.submit}
-              onClick={(e) => {
-                handleCategory("Carnes suínas");
-              }}
-            >
-              Carnes suínas
-            </Button>
-            <Button
-              variant="contained"
-              // className={styled.submit}
-              onClick={(e) => {
-                handleCategory("Doces");
-              }}
-            >
-              Doces
-            </Button> */}
           </div>
           <CategoryContent dados={dados} category={category} />
         </Container>

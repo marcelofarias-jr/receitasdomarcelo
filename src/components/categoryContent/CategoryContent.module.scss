@@ -2,11 +2,18 @@
 
 .CategoryContent {
   text-align: center;
-
   h1 {
     font-family: $title;
+    margin-top: 2rem;
   }
-
+  .no_category{
+    margin-top: 2rem;
+  }
+  .no_recipe{
+    margin-top: 2rem;
+    color: $red;
+    font-weight: bold;
+  }
   p {
     font-family: $paragraph;
     color: $black;
@@ -27,7 +34,6 @@
       text-decoration: none;
       font-family: $paragraph;
     }
-
     a {
       color: inherit;
       text-decoration: none;
@@ -37,13 +43,11 @@
 
   .CategoryContent_cards_img {
     width: 50%;
-
     img {
-      width: 70%;
+      width: 85%;
       border: 3px solid $light-yellow;
     }
   }
-
   .CategoryContent_cards_info {
     display: flex;
     flex-direction: column;
@@ -72,11 +76,9 @@
 @media only screen and (max-width: $md) {
   .CategoryContent_cards {
     flex-direction: column;
-
     img {
       margin-bottom: 1rem;
     }
-
     .CategoryContent_cards_info {
       width: 80%;
     }
@@ -85,7 +87,6 @@
   .CategoryContent {
     .CategoryContent_cards_img {
       width: 100%;
-
       img {
         width: 90%;
       }
