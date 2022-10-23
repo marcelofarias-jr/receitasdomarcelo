@@ -58,7 +58,7 @@ export default function Recipe() {
         <div className={styles.revenue__preparation}>
           <div className={styles.preparation__content}>
             <Container>
-              <h3>Como preparar {item.titulo}:</h3>
+              <h3>Modo de preparo</h3>
               <ul>
                 {preparation.map((item, i) => {
                   return <li key={i}>- {item}</li>;
