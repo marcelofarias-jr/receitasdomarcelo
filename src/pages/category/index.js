@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { loadRecipe } from "../../API/load-recipe";
 import { CategoryContent } from "../../components/categoryContent";
 import { Contact } from "../../components/contact";
@@ -27,7 +27,6 @@ export function Category() {
   useEffect(() => {
     handleLoadPosts();
   }, [handleLoadPosts]);
-  console.log('all', allCategory)
   return (
     <>
       <section className={styles.category}>
@@ -36,7 +35,8 @@ export function Category() {
             <h1>Categorias</h1>
             {allCategory.map((cat)=>{
               return(
-                <Button
+                <button
+                className={styles.tag__button}
                 variant="contained"
                 key={cat.id}
                 onClick={(e) => {
@@ -44,7 +44,7 @@ export function Category() {
                 }}
               >
                 {cat.nome}
-              </Button>
+              </button>
               )
 
             })}

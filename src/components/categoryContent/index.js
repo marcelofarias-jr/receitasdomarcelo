@@ -23,7 +23,7 @@ export const CategoryContent = ({ dados, category }) => {
           )}
           {data.map((receita) => {
             return (
-              <div className={styles.CategoryContent_cards}>
+              <div className={styles.CategoryContent_cards} key={receita.id}>
                 <div className={styles.CategoryContent_cards_img}>
                   <img
                     src={require("../../assets/img/" + receita.foto + ".jpg")}

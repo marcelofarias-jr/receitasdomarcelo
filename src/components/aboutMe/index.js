@@ -9,7 +9,7 @@ export default function AboutMe() {
           <div className={styles.AboutMe__text}>
             <h1>Quem sou eu:</h1>
             <p>
-              Este site é mantido pelo Marcelo (eu mesmo), cozinheiro
+              Este site foi desenvolvido e é mantido por mim mesmo,Marcelo, cozinheiro
               experimental. As receitas são todas testadas por mim e com alguns
               comentários a respeito de como eu às preparo. Este site foi criado
               como uma forma de praticar programação e também ter o meu livro de
