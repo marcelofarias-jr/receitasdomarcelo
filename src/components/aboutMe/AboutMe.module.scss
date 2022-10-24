@@ -1,0 +1,63 @@
+@import "../../assets/style/variables";
+
+p {
+  font-family: $paragraph;
+  margin: 0
+}
+h1{
+  font-family: $title;
+  color: $red;;
+}
+.AboutMe{
+  background-color: $light-yellow;
+  padding: 2rem 0;
+  width: 100%;
+  &__content{
+    display: flex;
+  }
+}
+.AboutMe__text{
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.5rem;
+}
+.AboutMe__img{
+  width: 50%;
+  img{
+    width: 80%;
+    height: auto;
+  }
+}
+
+
+@media only screen and (max-width: 991px){
+  .AboutMe{
+    padding: 1rem 0;
+  }
+  .AboutMe__text{
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: $md){
+  .AboutMe{
+    padding: 1rem 0;
+    &__content{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+  .AboutMe__text{
+    padding:1rem 0;
+    width: 100%;
+  }
+  .AboutMe__img{
+    img{
+      width: 100%;
+    }
+  }
+}

@@ -46,6 +46,11 @@ function Header() {
                 <li className={styles.menu_item_dsk}>
                   <a href="#contato">Contato</a>
                 </li>
+                <li className={styles.menu_item_dsk}>
+                  <Link to="/About" className={styles.menu_item_dsk}>
+                    Sobre
+                  </Link>
+                </li>
               </ul>
             </nav>
           </div>
@@ -71,6 +76,9 @@ function Header() {
               </Link>
               <Link to="/category" className={styles.menu_item_mbl} onClick={(e) => {setOpen(!open);}}>
                 Todas as categorias
+              </Link>
+              <Link to="/about" className={styles.menu_item_mbl} onClick={(e) => {setOpen(!open);}}>
+                Sobre
               </Link>
             </div>
           )}
