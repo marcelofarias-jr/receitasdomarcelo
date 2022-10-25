@@ -23,7 +23,7 @@ function Header() {
       <Container>
         <div className={styles.header__content}>
           <div className={styles.header__logo}>
-            <a href="/">
+            <a href="/home">
               <img
                 src={require("../../assets/img/logo-marcelo.png")}
                 alt="logo do site - Receitas do Marcelo"
