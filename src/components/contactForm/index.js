@@ -1,5 +1,4 @@
 import styles from "./ContactForm.module.scss";
-import * as Yup from "yup";
 import { useState } from "react";
 import emailjs from "emailjs-com";
 
