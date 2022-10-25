@@ -1,8 +1,4 @@
-import { Button, TextField } from "@mui/material";
-import { Formik } from "formik";
 import styles from "./ContactForm.module.scss";
-import styled from "styled-components/macro";
-import * as Yup from "yup";
 import { useState } from "react";
 import emailjs from "emailjs-com";
 
@@ -36,9 +32,6 @@ export default function ContactForm() {
     })
   }
 
-  const validationSchema = Yup.object().shape({
-    name: Yup.string().required("Este campo é obrigatório"),
-  });
   return (
     <div className={styles.ContactForm}>
       {/* <Formik
