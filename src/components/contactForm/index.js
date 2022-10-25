@@ -3,55 +3,45 @@ import { Formik } from "formik";
 import styles from "./ContactForm.module.scss";
 import styled from "styled-components/macro";
 import * as Yup from "yup";
+import { useState } from "react";
+import emailjs from "emailjs-com";
 
-const StyledTextField = styled(TextField)({
-  "& input": {
-    color: "white",
-  },
-  "& textarea": {
-    color: "white",
-  },
-  "& label": {
-    color: "white",
-  },
-  "&:hover label": {
-    fontWeight: 700,
-  },
-  "& label.Mui-focused": {
-    color: "white",
-  },
-  "& .MuiInput-underline:after": {
-    borderBottomColor: "white",
-  },
-  "& .MuiOutlinedInput-root": {
-    "& fieldset": {
-      borderColor: "white",
-    },
-    "&:hover fieldset": {
-      borderColor: "white",
-      borderWidth: 2,
-    },
-    "&.Mui-focused fieldset": {
-      borderColor: "white",
-    },
-  },
-});
 
 export default function ContactForm() {
-  let initialValues = {
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  };
-  const handleSubmit = async (values) => {console.log('valores', values)};
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  function sendMail(e){
+    e.preventDefault();
+    if(name === '' || email ==='' || message === ''){
+      alert("Preencha todos os campos");
+      return;
+    }
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email
+    }
+
+    emailjs.send("service_eweyhtu", "template_tzwtyeb", templateParams,"vg-lseNS7X1Z6v85k")
+    .then((response)=>{
+      console.log('email enviado', response.status, response.text)
+      setName('')
+      setEmail('')
+      setMessage('')
+      alert("Obrigado pelo contato! Sua mensagem foi enviada.")
+    }, (error)=>{
+      console.log("erro:", error)
+    })
+  }
 
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("Este campo é obrigatório"),
   });
   return (
     <div className={styles.ContactForm}>
-      <Formik
+      {/* <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
@@ -122,7 +112,33 @@ export default function ContactForm() {
             </Button>
           </form>
         )}
-      </Formik>
+      </Formik> */}
+      <form className="form" onSubmit={sendMail}>
+        <input
+          className="input"
+          type="text"
+          placeholder="Digite seu nome"
+          onChange={(e) => setName(e.target.value)}
+          value={name}
+        />
+
+        <input
+          className="input"
+          type="email"
+          placeholder="Digite seu email"
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
+        />
+
+        <textarea
+          className="textarea"
+          placeholder="Digite sua mensagem..."
+          onChange={(e) => setMessage(e.target.value)}
+          value={message}
+        />
+
+        <button className="button" type="submit" value="Enviar">Enviar</button>
+      </form>
     </div>
   );
 }

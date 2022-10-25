@@ -16,11 +16,24 @@
       margin-bottom: .5rem;
     }
   }
-
+  input{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  textarea{
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: $paragraph;
+  }
   button {
     background-color: $light-red;
     border: 1px solid white;
+    color: white;
+    border-radius: 1rem;
     width: 100%;
+    font-family: $paragraph;
+    margin-top: 1rem;
 
     &:hover {
       background-color: white;
