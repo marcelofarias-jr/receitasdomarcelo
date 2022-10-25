@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/receitasdomarcelo/static/css/main.f5c25db3.css",
+    "main.js": "/receitasdomarcelo/static/js/main.7e597c86.js",
+    "static/media/costela-barbecue.jpg": "/receitasdomarcelo/static/media/costela-barbecue.71c9c84a46811bb76753.jpg",
+    "static/media/salad-g776bb6946_1920.jpg": "/receitasdomarcelo/static/media/salad-g776bb6946_1920.f8fe2db17af19f321a2a.jpg",
+    "static/media/churros-g487757b3c_1920.jpg": "/receitasdomarcelo/static/media/churros-g487757b3c_1920.bdd90d886f2002b95288.jpg",
+    "static/media/noodle-g2bf9073d9_1920.jpg": "/receitasdomarcelo/static/media/noodle-g2bf9073d9_1920.5c855d5c820c8dac48ec.jpg",
+    "static/media/soup-gd80079fb3_1920.jpg": "/receitasdomarcelo/static/media/soup-gd80079fb3_1920.3ebfcb73a1dae8254158.jpg",
+    "static/media/cake-g883e0c773_1920.jpg": "/receitasdomarcelo/static/media/cake-g883e0c773_1920.ce4cafaaf759e686daca.jpg",
+    "static/media/christmas-cookies-g6dbc56827_1920.jpg": "/receitasdomarcelo/static/media/christmas-cookies-g6dbc56827_1920.33589c34849caccb1ef8.jpg",
+    "static/media/pasta-g6a3a00a95_1920.jpg": "/receitasdomarcelo/static/media/pasta-g6a3a00a95_1920.46a67cd764e8a9dfe5b4.jpg",
+    "static/media/pancakes-g02bec7b25_1920.jpg": "/receitasdomarcelo/static/media/pancakes-g02bec7b25_1920.64adedc0ff980d7944e3.jpg",
+    "static/media/marcelo-farias.jpeg": "/receitasdomarcelo/static/media/marcelo-farias.318fc1a282ec67838d75.jpeg",
+    "static/media/pizza-g574fde27b_1920.jpg": "/receitasdomarcelo/static/media/pizza-g574fde27b_1920.d17287f34c416f8590f3.jpg",
+    "static/media/pesto.jpg": "/receitasdomarcelo/static/media/pesto.e27c9498ff99ae6b5ed4.jpg",
+    "static/media/bolo-indiano.jpg": "/receitasdomarcelo/static/media/bolo-indiano.c58772b31b68ee746fdf.jpg",
+    "static/media/caponata.jpg": "/receitasdomarcelo/static/media/caponata.bc18dc690b323fd0316f.jpg",
+    "static/media/bruaca.jpg": "/receitasdomarcelo/static/media/bruaca.3cfba63f914b53a354e7.jpg",
+    "static/media/macarrão-amatriciana.jpg": "/receitasdomarcelo/static/media/macarrão-amatriciana.866492ce0ff928ffd9be.jpg",
+    "static/media/torta-frango.jpg": "/receitasdomarcelo/static/media/torta-frango.f4f989cf88bcce4294e7.jpg",
+    "static/media/barbecue.jpg": "/receitasdomarcelo/static/media/barbecue.120794718fd67eaeca18.jpg",
+    "static/media/requeijao.jpg": "/receitasdomarcelo/static/media/requeijao.71d1d925b3351d096b31.jpg",
+    "static/media/logo-marcelo.png": "/receitasdomarcelo/static/media/logo-marcelo.261afdee5a7af75b4dcf.png",
+    "static/media/bolo-prestigio.jpg": "/receitasdomarcelo/static/media/bolo-prestigio.c32d0b76d7c1af2c5526.jpg",
+    "index.html": "/receitasdomarcelo/index.html",
+    "main.f5c25db3.css.map": "/receitasdomarcelo/static/css/main.f5c25db3.css.map",
+    "main.7e597c86.js.map": "/receitasdomarcelo/static/js/main.7e597c86.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5c25db3.css",
+    "static/js/main.7e597c86.js"
+  ]
+}
