@@ -11,7 +11,7 @@ export default function SearchRecipe({ dados, searchValue }) {
     );
     setSearch(searchTemp);
     console.log("searchTemp", searchTemp);
-  }, [searchValue]);
+  }, [searchValue, dados]);
 
   return (
     <>

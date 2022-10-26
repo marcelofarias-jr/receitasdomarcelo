@@ -7,7 +7,7 @@ export default function AboutMe() {
       <Container>
         <div className={styles.AboutMe__content}>
           <div className={styles.AboutMe__text}>
-            <h1>Quem sou eu:</h1>
+            <h1>Quem sou eu</h1>
             <p>
               Este site foi desenvolvido e é mantido por mim mesmo, Marcelo, cozinheiro
               experimental. As receitas são todas testadas por mim e com alguns

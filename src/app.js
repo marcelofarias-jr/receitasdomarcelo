@@ -7,8 +7,8 @@ import Recipe from './pages/recipe';
 import Footer from './components/footer';
 import NotFound from './pages/notFound';
 import { Category } from './pages/category';
-import Recipes from './pages/recipes';
 import About from './pages/about';
+import PageRecipes from './pages/PageRecipes';
 
 export default function App (){
   return(
@@ -18,7 +18,7 @@ export default function App (){
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/Recipe' element={<Recipes />} />
+          <Route path='/Recipe' element={<PageRecipes />} />
           <Route path='/receitas/:id' element={<Recipe />} />
           <Route path='/category' element={<Category />} />
           <Route path="*" element={<NotFound />} />

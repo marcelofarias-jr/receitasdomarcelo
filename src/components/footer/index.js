@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Container } from "react-bootstrap";
-import { Map } from "../map";
 import styles from "./Footer.module.scss";
 export default function Footer() {
   return (
