@@ -4,7 +4,6 @@ import Hero from "../../components/hero";
 import List from "../../components/list";
 import { useCallback, useEffect, useState } from "react";
 import { loadRecipe } from "../../API/load-recipe";
-import styles from "./Home.module.scss"
 import { Contact } from "../../components/contact";
 export default function Home() {
 const [dados, setDados] = useState([]);
@@ -22,7 +21,7 @@ const handleLoadPosts = useCallback(async () => {
   }, [handleLoadPosts]);
 
   return(
-    <main className={styles.home}>
+    <main>
         <Hero data={fav}/>
         <List data={dados}/>
         <Contact />

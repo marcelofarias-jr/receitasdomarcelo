@@ -1,7 +1,6 @@
 @import "../../assets/style/variables";
 
 .category{
-  background-color: $light-yellow;
   font-family: $paragraph;
   padding-bottom: 3rem;
   margin-bottom: -30px;
@@ -10,6 +9,7 @@
     text-align: center;
     h1{
       font-family: $title;
+      margin: 2 rem;
     }
     p{
       font-family: $paragraph;
@@ -17,11 +17,14 @@
     button{
         border-radius: 2rem;
         border: none;
-        background-color: $light-yellow;
+        background-color: inherit;
         margin: 0 .3rem;
         padding: .5rem 1rem;
+        border: 1px solid $black;
         &:hover{
           border: 1px solid $red;
+          background-color: $light-red;
+          color: white;
         }
     }
   }

@@ -1,44 +1,7 @@
 @import "../../assets/style/variables";
 
-// footer{
-//   padding: 50px 0;
-//   background-color: $light-red;
-//   color: white;
-//   font-family: $paragraph;
-//   ul{
-//     list-style: none;
-//     margin: 0;
-//     padding: 0;
-//   }
-//   a{
-//     text-decoration: none;
-//     color: $light-yellow;
-//     font-family: $paragraph;
-//     &:hover{
-//       color: $green;
-//     }
-//   }
-//   h4{
-//     font-family: $title;
-//   }
-//   p{
-//     font-family: $paragraph;
-//   }
-// }
-// .footer__content{
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: nowrap;
-//   justify-content: space-between;
-// }
-// .info{
-//   text-align: center;
-//   font-family: $paragraph;
-// }
-
 footer {
   color: $black;
-  background-color: $light-yellow;
   .info{
     div{
       padding: 1rem 0;
