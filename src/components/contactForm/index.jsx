@@ -20,17 +20,16 @@ export default function ContactForm() {
       email: email
     }
 
-    emailjs.send("service_eweyhtu", "template_tzwtyeb", templateParams,"vg-lseNS7X1Z6v85k")
-    .then((response)=>{
-      console.log('email enviado', response.status, response.text)
-      setName('')
-      setEmail('')
-      setMessage('')
-      alert("Obrigado pelo contato! Sua mensagem foi enviada.")
-    }, (error)=>{
-      console.log("erro:", error)
-    })
-  }
+    emailjs.send('service_pouirx8', 'template_tzwtyeb', templateParams, 'vg-lseNS7X1Z6v85k')
+    .then(() => {
+        setName('');
+        setEmail('');
+        setMessage('');
+        alert('Obrigado pelo contato! Sua mensagem foi enviada.');
+    }, (error) => {
+        console.log('erro:', error);
+    });
+}
 
   return (
     <div className={styles.ContactForm}>
