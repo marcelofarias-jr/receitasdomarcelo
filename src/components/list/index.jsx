@@ -33,18 +33,18 @@ export default function List({ data }) {
                 <div className={styles.lista_ultimas_item} key={receita.id}>
                   <div className={styles.lista_ultimas_item_img}>
                     <img
-                      src={require("../../assets/img/" + receita.foto + ".jpg")}
-                      alt={receita.titulo}
+                      src={require("../../assets/img/" + receita?.foto + ".jpg")}
+                      alt={receita?.titulo}
                     />
                   </div>
                   <div className={styles.lista_ultimas_info}>
-                    <Link to={`/receitas/${receita.id}`}>
-                      <h3>{receita.titulo}</h3>
+                    <Link to={`/receitas/${receita?.id}`}>
+                      <h3>{receita?.titulo}</h3>
                     </Link>
                   </div>
                   <div className={styles.lista_ultimas_info__tags}>
                     <p>
-                      {receita.tempoDePreparo}
+                      {receita?.tempoDePreparo}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -57,7 +57,7 @@ export default function List({ data }) {
                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
                       </svg>
                     </p>
-                    <p>{receita.rendimento}</p>
+                    <p>{receita?.rendimento}</p>
                   </div>
                 </div>
               );
@@ -69,21 +69,21 @@ export default function List({ data }) {
           <div className={styles.lista_conteudo}>
             {more.map((receita) => {
               return (
-                <div className={styles.lista_ultimas_item} key={receita.id}>
+                <div className={styles.lista_ultimas_item} key={receita?.id}>
                   <div className={styles.lista_ultimas_item_img}>
                     <img
-                      src={require("../../assets/img/" + receita.foto + ".jpg")}
-                      alt={receita.resumo}
+                      src={require("../../assets/img/" + receita?.foto + ".jpg")}
+                      alt={receita?.resumo}
                     />
                   </div>
                   <div className={styles.lista_ultimas_info}>
-                    <Link to={`/receitas/${receita.id}`}>
-                      <h3>{receita.titulo}</h3>
+                    <Link to={`/receitas/${receita?.id}`}>
+                      <h3>{receita?.titulo}</h3>
                     </Link>
                   </div>
                   <div className={styles.lista_ultimas_info__tags}>
                     <p>
-                      {receita.tempoDePreparo}
+                      {receita?.tempoDePreparo}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -96,7 +96,7 @@ export default function List({ data }) {
                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
                       </svg>
                     </p>
-                    <p>{receita.rendimento}</p>
+                    <p>{receita?.rendimento}</p>
                   </div>
                 </div>
               );

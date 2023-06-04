@@ -17,18 +17,18 @@ export default function Hero({ data }) {
         <Carousel activeIndex={index} onSelect={handleSelect}>
           {data.map((receita) => {
             return (
-              <Carousel.Item key={receita.id}>
+              <Carousel.Item key={receita?.id}>
                 <div>
                   <img
-                    src={require("../../assets/img/" + receita.foto + ".jpg")}
-                    alt={receita.titulo}
+                    src={require("../../assets/img/" + receita?.foto + ".jpg")}
+                    alt={receita?.titulo}
                   />
                   <Carousel.Caption>
                     <div className={styles.caption}>
-                      <Link to={`/receitas/${receita.id}`}>
-                        <h3>{receita.titulo}</h3>
+                      <Link to={`/receitas/${receita?.id}`}>
+                        <h3>{receita?.titulo}</h3>
                       </Link>
-                      <p>{receita.resumo}</p>
+                      <p>{receita?.resumo}</p>
                     </div>
                   </Carousel.Caption>
                 </div>
